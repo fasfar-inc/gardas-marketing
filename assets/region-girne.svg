@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190" role="img" aria-label="Girne harbour">
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5fa9e8"/><stop offset=".55" stop-color="#1a5898"/><stop offset="1" stop-color="#071b38"/></linearGradient></defs>
+  <rect width="320" height="190" fill="url(#s)"/>
+  <path d="M0 102c61-24 115-29 164-15 60 16 98 15 156-9v112H0Z" fill="#0a3974" opacity=".78"/>
+  <path d="M0 126c48-9 94-6 138 8 59 19 119 16 182-10v66H0Z" fill="#08254e"/>
+  <path d="M24 130h28v-41h34v41h20v-62h42v62h29v-32h33v32h24v-44h39v44h22v28H24Z" fill="#112f55"/>
+  <path d="M18 151c80-18 169-19 267-3" stroke="#87bfff" stroke-width="3" stroke-opacity=".22" fill="none"/>
+  <circle cx="64" cy="137" r="3" fill="#ffd68a"/><circle cx="132" cy="132" r="3" fill="#ffd68a"/><circle cx="218" cy="139" r="3" fill="#ffd68a"/>
+</svg>

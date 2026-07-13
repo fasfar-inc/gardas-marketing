@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" role="img" aria-label="GARDAŞ Ride sedan">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".55" stop-color="#dfeaff"/>
+      <stop offset="1" stop-color="#a9c6f3"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b356f"/>
+      <stop offset="1" stop-color="#03132d"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".54" r=".55">
+      <stop offset="0" stop-color="#1774ff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#1774ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="520" height="260" rx="28" fill="url(#halo)"/>
+  <path d="M54 199c79 18 340 19 416-2" fill="none" stroke="#0b2d5d" stroke-width="17" stroke-linecap="round" opacity=".18"/>
+  <path d="M93 165c19-39 59-57 119-62l81-6c51-4 88 13 112 52l31 5c25 4 42 23 41 47l-1 13H67v-18c0-17 10-27 26-31Z" fill="url(#body)" stroke="#ffffff" stroke-width="3"/>
+  <path d="M168 114c18-24 42-36 75-39l50-4c34-3 64 11 87 44l-212-1Z" fill="url(#glass)"/>
+  <path d="M190 113c15-18 34-27 59-29l33-3v32h-92Z" fill="#123c79"/>
+  <path d="M296 81c27 1 49 12 66 32h-66Z" fill="#0b2a5a"/>
+  <path d="M88 174h60c10 0 17 8 15 18H77c2-10 5-16 11-18Z" fill="#d7e8ff"/>
+  <path d="M389 170h50c13 3 22 12 25 24h-79c-2-8 0-16 4-24Z" fill="#c9ddf9"/>
+  <circle cx="151" cy="212" r="28" fill="#061936"/>
+  <circle cx="151" cy="212" r="13" fill="#4f88d8"/>
+  <circle cx="389" cy="212" r="28" fill="#061936"/>
+  <circle cx="389" cy="212" r="13" fill="#4f88d8"/>
+  <path d="M213 149h118" stroke="#0a2b5c" stroke-opacity=".26" stroke-width="5" stroke-linecap="round"/>
+  <path d="M412 151h31" stroke="#126bff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M80 155h30" stroke="#79b4ff" stroke-width="7" stroke-linecap="round"/>
+  <path d="M260 43c-18 0-32 14-32 32 0 23 32 58 32 58s32-35 32-58c0-18-14-32-32-32Zm0 44a12 12 0 1 1 0-24 12 12 0 0 1 0 24Z" fill="#156bff" opacity=".92"/>
+</svg>

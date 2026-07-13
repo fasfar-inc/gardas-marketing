@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" role="img" aria-label="GARDAŞ Airport transfer">
+  <defs>
+    <linearGradient id="airportCar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6fbff"/>
+      <stop offset=".42" stop-color="#b9cef2"/>
+      <stop offset="1" stop-color="#061936"/>
+    </linearGradient>
+    <radialGradient id="airportHalo" cx=".54" cy=".5" r=".58">
+      <stop offset="0" stop-color="#1d75ff" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#1d75ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="520" height="260" rx="28" fill="url(#airportHalo)"/>
+  <g opacity=".9">
+    <path d="M90 77 354 112c34 5 62 19 84 42l-285-34-89 38-19-8 67-45-61-9 15-18 44 5Z" fill="#eaf4ff"/>
+    <path d="M284 56 384 94l-62 18-53-38Z" fill="#d7e9ff"/>
+    <path d="M210 124 129 181l-33-5 53-64Z" fill="#c7ddfa"/>
+    <path d="M398 142h54" stroke="#156bff" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <path d="M54 204c87 17 341 17 411-2" fill="none" stroke="#051126" stroke-width="18" stroke-linecap="round" opacity=".24"/>
+  <path d="M87 165c19-31 52-47 100-49l83-4c49-2 89 16 121 54l43 7c21 4 35 20 35 41H58v-24c0-15 11-24 29-25Z" fill="url(#airportCar)" stroke="#ffffff" stroke-width="3"/>
+  <path d="M164 124c18-18 38-27 62-28l51-2c31-1 57 10 79 33l-192-3Z" fill="#071b38"/>
+  <path d="M184 124c15-12 29-18 43-19l35-1v20h-78Z" fill="#0d356f"/>
+  <path d="M276 104c26 0 46 8 60 22h-60Z" fill="#061936"/>
+  <path d="M84 174h61c9 0 15 7 12 16H70c3-9 8-14 14-16Z" fill="#e9f4ff"/>
+  <path d="M392 171h53c9 2 16 9 19 18h-75c-2-7-1-13 3-18Z" fill="#5f9eff"/>
+  <circle cx="151" cy="213" r="27" fill="#030914"/>
+  <circle cx="151" cy="213" r="12" fill="#71aaff"/>
+  <circle cx="385" cy="213" r="27" fill="#030914"/>
+  <circle cx="385" cy="213" r="12" fill="#71aaff"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190" role="img" aria-label="Ercan Airport">
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fc8f7"/><stop offset=".5" stop-color="#426ea2"/><stop offset="1" stop-color="#071b38"/></linearGradient></defs>
+  <rect width="320" height="190" fill="url(#s)"/>
+  <path d="M0 125c72-23 143-24 214-4 42 12 78 11 106-3v72H0Z" fill="#0b2a58"/>
+  <path d="M35 128h214l32 31H35Z" fill="#d8e7f4" opacity=".82"/>
+  <path d="M58 100h156v28H58Z" fill="#14365f"/>
+  <path d="M68 108h22m17 0h22m17 0h22m17 0h22" stroke="#b9dbff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M67 73 231 93c22 3 39 11 52 24l-182-21-53 23-12-5 43-27-37-6 9-11 28 4Z" fill="#f4f9ff"/>
+  <path d="M0 159c105 14 211 9 320-13v44H0Z" fill="#041126" opacity=".65"/>
+</svg>

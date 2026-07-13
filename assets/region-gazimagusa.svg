@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190" role="img" aria-label="Gazimağusa old walls">
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#68afe9"/><stop offset=".52" stop-color="#235d9c"/><stop offset="1" stop-color="#071b38"/></linearGradient></defs>
+  <rect width="320" height="190" fill="url(#s)"/>
+  <path d="M0 108c67-19 136-17 206 4 46 14 84 12 114-5v83H0Z" fill="#0b366f"/>
+  <path d="M34 134h253v28H34Z" fill="#725f42"/>
+  <path d="M48 134V87h36v47H48Zm51 0V72h41v62H99Zm56 0V93h36v41h-36Zm51 0V80h42v54h-42Z" fill="#c7ae7e"/>
+  <path d="M34 134h253" stroke="#f5d494" stroke-width="4" stroke-opacity=".45"/>
+  <path d="M0 161c104 14 206 11 320-11v40H0Z" fill="#05142c" opacity=".65"/>
+  <circle cx="247" cy="122" r="3" fill="#ffd68a"/><circle cx="119" cy="121" r="3" fill="#ffd68a"/>
+</svg>

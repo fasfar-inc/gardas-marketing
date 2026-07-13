@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" role="img" aria-label="GARDAŞ XL vehicle">
+  <defs>
+    <linearGradient id="xlBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a3e62"/>
+      <stop offset=".5" stop-color="#0b1932"/>
+      <stop offset="1" stop-color="#030914"/>
+    </linearGradient>
+    <linearGradient id="xlGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d75ff"/>
+      <stop offset=".18" stop-color="#0a326d"/>
+      <stop offset="1" stop-color="#020812"/>
+    </linearGradient>
+    <radialGradient id="xlHalo" cx=".5" cy=".54" r=".55">
+      <stop offset="0" stop-color="#156bff" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#156bff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="520" height="260" rx="28" fill="url(#xlHalo)"/>
+  <path d="M58 202c84 17 346 17 421-2" fill="none" stroke="#051126" stroke-width="18" stroke-linecap="round" opacity=".32"/>
+  <path d="M70 153c14-42 43-63 87-67h171c44 0 78 24 101 72l22 4c28 6 44 25 43 55H51v-31c0-20 7-31 19-33Z" fill="url(#xlBody)" stroke="#2f5186" stroke-width="3"/>
+  <path d="M145 98h180c31 0 56 18 76 53H110c7-32 19-49 35-53Z" fill="url(#xlGlass)"/>
+  <path d="M187 102h63v49h-77Z" fill="#0d2853"/>
+  <path d="M265 102h58c22 0 41 16 57 49H265Z" fill="#081b39"/>
+  <path d="M89 170h68c8 0 14 8 11 17H73c4-10 9-16 16-17Z" fill="#e5f0ff" opacity=".62"/>
+  <path d="M405 168h55c11 4 18 11 21 22h-80c-2-8-1-15 4-22Z" fill="#5f9eff"/>
+  <circle cx="154" cy="215" r="31" fill="#030914" stroke="#395d92" stroke-width="6"/>
+  <circle cx="154" cy="215" r="12" fill="#8ab9ff"/>
+  <circle cx="393" cy="215" r="31" fill="#030914" stroke="#395d92" stroke-width="6"/>
+  <circle cx="393" cy="215" r="12" fill="#8ab9ff"/>
+  <path d="M190 164h139" stroke="#6689ba" stroke-opacity=".28" stroke-width="5" stroke-linecap="round"/>
+  <path d="M63 147c90-16 219-21 385 6" fill="none" stroke="#ffffff" stroke-opacity=".2" stroke-width="4" stroke-linecap="round"/>
+</svg>

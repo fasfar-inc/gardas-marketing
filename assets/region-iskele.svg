@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190" role="img" aria-label="İskele coastline">
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#73c6f1"/><stop offset=".48" stop-color="#1d6fac"/><stop offset="1" stop-color="#071b38"/></linearGradient></defs>
+  <rect width="320" height="190" fill="url(#s)"/>
+  <path d="M0 101c62-20 120-21 174-3 60 19 109 13 146-18v110H0Z" fill="#0a5690" opacity=".68"/>
+  <path d="M0 131c83-28 177-27 320 2v57H0Z" fill="#d5b56f" opacity=".8"/>
+  <path d="M0 145c92 14 199 13 320-4v49H0Z" fill="#071b38" opacity=".62"/>
+  <path d="M212 131c-9-35-3-66 18-93" stroke="#12365f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M230 48c22 3 39 13 51 31-28-3-47-13-51-31Zm-8 8c-24 3-43 14-58 34 31-3 50-14 58-34Z" fill="#0f3765"/>
+  <path d="M42 129c72-10 148-4 228 18" stroke="#fff" stroke-width="3" stroke-opacity=".34" fill="none"/>
+</svg>

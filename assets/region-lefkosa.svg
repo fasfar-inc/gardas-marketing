@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190" role="img" aria-label="Lefkoşa old city">
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#75b5ee"/><stop offset=".56" stop-color="#386999"/><stop offset="1" stop-color="#071b38"/></linearGradient></defs>
+  <rect width="320" height="190" fill="url(#s)"/>
+  <path d="M0 98c77-24 147-28 209-12 45 12 83 10 111-4v108H0Z" fill="#173c68" opacity=".8"/>
+  <path d="M43 126V70h234v56h-24v-26c0-15-12-27-27-27s-27 12-27 27v26h-25v-26c0-15-12-27-27-27s-27 12-27 27v26H96v-26c0-15-12-27-27-27s-26 12-26 27v26Z" fill="#d6c29c" opacity=".84"/>
+  <path d="M37 126h246v30H37Z" fill="#6c563e"/>
+  <path d="M54 157h217" stroke="#ffc875" stroke-width="4" stroke-opacity=".5"/>
+  <path d="M0 151c85 13 161 10 320-13v52H0Z" fill="#061936" opacity=".62"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="North Cyprus coastline at night">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06152e"/>
+      <stop offset=".45" stop-color="#0a2d63"/>
+      <stop offset="1" stop-color="#06142d"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#09254e"/>
+      <stop offset=".55" stop-color="#0c3a78"/>
+      <stop offset="1" stop-color="#061936"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102d55"/>
+      <stop offset="1" stop-color="#030b18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".64" cy=".27" r=".48">
+      <stop offset="0" stop-color="#1d75ff" stop-opacity=".36"/>
+      <stop offset=".54" stop-color="#0d4cae" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#071b38" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <path d="M0 380c155-58 296-82 449-72 185 12 275 92 457 91 181-2 275-88 458-92 99-2 176 15 236 41v202H0Z" fill="#071a36" opacity=".76"/>
+  <path d="M0 462c194-58 332-62 506-28 160 31 260 52 433 18 201-40 396-66 661 18v182H0Z" fill="#0a254e" opacity=".92"/>
+  <path d="M0 548h1600v352H0Z" fill="url(#sea)" opacity=".88"/>
+  <path d="M0 626c149-44 274-54 401-33 155 25 254 84 441 65 220-22 366-105 758-42v284H0Z" fill="#071733" opacity=".72"/>
+  <path d="M0 706c148-36 267-54 401-56 180-3 282 42 438 58 207 21 407-4 761-66v258H0Z" fill="url(#road)"/>
+  <path d="M0 764c235-38 485-33 750 16 312 58 596 42 850-54v174H0Z" fill="#030914" opacity=".88"/>
+  <g opacity=".66">
+    <path d="M108 682h32v-48h34v48h38v-86h49v86h24v-62h50v62h34v-42h61v42h38v44H108Z" fill="#0c2a55"/>
+    <path d="M105 681h370" stroke="#66a6ff" stroke-opacity=".22" stroke-width="2"/>
+    <circle cx="142" cy="664" r="3" fill="#ffd68a"/>
+    <circle cx="220" cy="650" r="3" fill="#ffd68a"/>
+    <circle cx="326" cy="666" r="3" fill="#ffd68a"/>
+    <circle cx="430" cy="656" r="3" fill="#ffd68a"/>
+  </g>
+  <g opacity=".54">
+    <path d="M1056 638c84-22 175-21 270 4 78 21 148 22 226 0" fill="none" stroke="#83b9ff" stroke-width="3" stroke-opacity=".18"/>
+    <path d="M936 766c132-28 277-25 435 10" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity=".09"/>
+    <path d="M1074 806c118 12 236 7 354-16" fill="none" stroke="#1d75ff" stroke-width="6" stroke-opacity=".18"/>
+  </g>
+  <g filter="url(#soft)" opacity=".72">
+    <circle cx="642" cy="690" r="4" fill="#f7c66d"/>
+    <circle cx="710" cy="676" r="3" fill="#f7c66d"/>
+    <circle cx="781" cy="700" r="3" fill="#f7c66d"/>
+    <circle cx="850" cy="683" r="4" fill="#f7c66d"/>
+    <circle cx="915" cy="704" r="3" fill="#f7c66d"/>
+    <circle cx="984" cy="678" r="3" fill="#f7c66d"/>
+  </g>
+</svg>
