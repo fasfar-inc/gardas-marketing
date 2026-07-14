@@ -166,7 +166,7 @@
 
   const productionLinks = {
     app: "https://app.gardasapp.com/",
-    driver: "https://driver.gardas.app/"
+    driver: "https://app.gardasapp.com/driver/"
   };
 
   const localLinks = {
