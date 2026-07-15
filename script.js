@@ -16,6 +16,7 @@
       "hero.driver": "Sürücü Ol",
       "soon": "Yakında",
       "phone.where": "Nereye gidiyorsun?",
+      "onboarding.prompt": "Nasıl devam etmek istersiniz?",
       "phone.from": "Alış noktası",
       "phone.to": "Varış",
       "phone.button": "Devam Et",
@@ -96,6 +97,7 @@
       "hero.driver": "Become a Driver",
       "soon": "Coming Soon",
       "phone.where": "Where are you going?",
+      "onboarding.prompt": "How would you like to continue?",
       "phone.from": "Pickup point",
       "phone.to": "Destination",
       "phone.button": "Continue",
@@ -199,6 +201,17 @@
 
   document.querySelectorAll("[data-lang]").forEach((btn) => {
     btn.addEventListener("click", () => setLanguage(btn.getAttribute("data-lang")));
+  });
+
+  document.querySelectorAll(".onboarding-back").forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.hash = "#home";
+      }
+    });
   });
 
   document.querySelectorAll(".store-badge").forEach((badge) => {
