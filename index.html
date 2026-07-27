@@ -55,222 +55,177 @@
   </nav>
 </header>
 
-<main>
+<main class="wrap page">
 
-<!-- ============ SECTION 1 — DARK HERO ============ -->
-<section class="hero" id="home">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-routes" aria-hidden="true">
-    <svg viewBox="0 0 1440 780" preserveAspectRatio="xMidYMid slice">
-      <path class="rt" d="M-40 540 C260 500 380 380 660 400 C920 418 1060 300 1340 250"/>
-      <path class="rt b" d="M120 740 C320 580 320 470 540 430 C780 386 940 470 1200 430 C1330 412 1410 360 1520 330"/>
-      <circle class="pin" cx="660" cy="400" r="8"/>
-      <circle class="pin soft" cx="1340" cy="250" r="7"/>
-      <circle class="pin soft" cx="120" cy="740" r="6"/>
-    </svg>
-  </div>
-
-  <div class="wrap hero-inner">
-    <div class="hero-copy reveal">
-      <p class="eyebrow" data-i18n="hero.eyebrow">NORTH CYPRUS MOBILITY</p>
-      <h1 class="hero-title" data-i18n="hero.title">North Cyprus, <span class="hl">one tap away.</span></h1>
-      <p class="hero-lead" data-i18n="hero.lead">Request a safe, reliable and comfortable ride anytime, anywhere in North Cyprus.</p>
-      <div class="hero-actions">
-        <a class="btn primary btn-lg" href="https://app.gardasapp.com" data-app-link><span data-i18n="cta.open">Open</span>&nbsp;<span translate="no">GARDAŞ</span> <i class="arr">→</i></a>
-        <a class="btn ghost btn-lg" href="https://app.gardasapp.com/driver" data-driver-link data-i18n="cta.driver">Become a driver</a>
+  <!-- ===== ROW 1: HERO (left) + right column (how / video / rides) ===== -->
+  <section class="hero-zone" id="home">
+    <!-- HERO card -->
+    <div class="hero reveal">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-routes" aria-hidden="true">
+        <svg viewBox="0 0 900 620" preserveAspectRatio="xMidYMid slice">
+          <path class="rt" d="M-40 430 C160 400 260 300 440 320 C640 342 720 240 900 210"/>
+          <path class="rt b" d="M80 600 C240 470 240 380 420 350 C620 316 740 380 940 350"/>
+          <circle class="pin" cx="440" cy="320" r="7"/>
+          <circle class="pin soft" cx="820" cy="235" r="6"/>
+        </svg>
       </div>
-      <div class="store-row">
-        <span class="store-badge"><span class="store-ic apple"></span><span class="store-tx"><small data-i18n="store.on">Coming soon on</small><b translate="no">App Store</b></span></span>
-        <span class="store-badge"><span class="store-ic play"></span><span class="store-tx"><small data-i18n="store.on">Coming soon on</small><b translate="no">Google Play</b></span></span>
+      <div class="hero-body">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">NORTH CYPRUS MOBILITY</p>
+          <h1 class="hero-title" data-i18n="hero.title">North Cyprus, <span class="hl">one tap away.</span></h1>
+          <p class="hero-lead" data-i18n="hero.lead">Request a safe, reliable and comfortable ride anytime, anywhere in North Cyprus.</p>
+          <div class="hero-actions">
+            <a class="btn primary btn-lg" href="https://app.gardasapp.com" data-app-link><span data-i18n="cta.open">Open</span>&nbsp;<span translate="no">GARDAŞ</span> <i class="arr">→</i></a>
+            <a class="btn ghost btn-lg" href="https://app.gardasapp.com/driver" data-driver-link data-i18n="cta.driver">Become a driver</a>
+          </div>
+          <div class="store-row">
+            <span class="store-badge"><span class="store-ic apple"></span><span class="store-tx"><small data-i18n="store.on">Coming soon on</small><b translate="no">App Store</b></span></span>
+            <span class="store-badge"><span class="store-ic play"></span><span class="store-tx"><small data-i18n="store.on">Coming soon on</small><b translate="no">Google Play</b></span></span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <div class="phone hero-phone">
+            <div class="phone-notch" aria-hidden="true"></div>
+            <div class="phone-screen">
+              <div class="ph-status"><span translate="no">9:41</span><span class="ph-status-ic" aria-hidden="true"></span></div>
+              <div class="ph-field ph-pickup"><span class="ph-dot green"></span><div><small data-i18n="phone.pickup">Pickup location</small><b translate="no">Girne, Merkez</b></div></div>
+              <div class="ph-field ph-where"><span class="ph-plus">+</span><b data-i18n="phone.where">Where to?</b></div>
+              <div class="ph-map">
+                <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <rect width="300" height="300" fill="#eef4fb"/>
+                  <path d="M-20 120 Q80 90 160 130 T340 120" fill="none" stroke="#dce7f4" stroke-width="16"/>
+                  <path d="M60 -20 Q90 120 150 180 T240 340" fill="none" stroke="#dce7f4" stroke-width="12"/>
+                  <path class="ph-route" d="M70 232 L104 232 Q120 232 120 214 L120 128 Q120 110 138 110 L214 110" fill="none" stroke="#086BFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="70" cy="232" r="9" fill="#19c37d" stroke="#fff" stroke-width="3"/>
+                  <g class="ph-carmark"><rect x="126" y="98" width="26" height="26" rx="7" fill="#03152F"/></g>
+                  <circle cx="214" cy="110" r="9" fill="#086BFF" stroke="#fff" stroke-width="3"/>
+                </svg>
+                <span class="ph-taxi" aria-hidden="true">🚕</span>
+              </div>
+            </div>
+          </div>
+          <div class="float-card fc-driver">
+            <div class="fc-driver-head"><span data-i18n="phone.yourdriver">Your driver</span><i class="arr">→</i></div>
+            <b class="fc-driver-eta" data-i18n="phone.eta">2 min away</b>
+            <div class="fc-driver-body">
+              <img src="assets/ref-driver-person.png" alt="" class="fc-avatar">
+              <div>
+                <div class="fc-driver-name"><b translate="no">Mehmet K.</b><span class="fc-rating">4.9 <i>★</i></span></div>
+                <small class="fc-plate" translate="no">348 123</small>
+                <small class="fc-car" translate="no">Mercedes-Benz E-Class</small>
+              </div>
+            </div>
+          </div>
+          <div class="float-card fc-price">
+            <div>
+              <small data-i18n="phone.estprice">Estimated price</small>
+              <b class="fc-amount" translate="no">120 ₺</b>
+              <small class="fc-pay" data-i18n="phone.cash">Cash payment</small>
+            </div>
+            <span class="fc-wallet" aria-hidden="true"></span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="hero-visual reveal">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="phone hero-phone">
-        <div class="phone-notch" aria-hidden="true"></div>
-        <div class="phone-screen">
-          <div class="ph-status"><span translate="no">9:41</span><span class="ph-status-ic" aria-hidden="true"></span></div>
-          <div class="ph-field ph-pickup"><span class="ph-dot green"></span><div><small data-i18n="phone.pickup">Pickup location</small><b translate="no">Girne, Merkez</b></div></div>
-          <div class="ph-field ph-where"><span class="ph-plus">+</span><b data-i18n="phone.where">Where to?</b></div>
-          <div class="ph-map">
-            <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <rect width="300" height="300" fill="#eef4fb"/>
-              <path d="M-20 120 Q80 90 160 130 T340 120" fill="none" stroke="#dce7f4" stroke-width="16"/>
-              <path d="M60 -20 Q90 120 150 180 T240 340" fill="none" stroke="#dce7f4" stroke-width="12"/>
-              <path class="ph-route" d="M70 232 L104 232 Q120 232 120 214 L120 128 Q120 110 138 110 L214 110" fill="none" stroke="#086BFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="70" cy="232" r="9" fill="#19c37d" stroke="#fff" stroke-width="3"/>
-              <g class="ph-carmark"><rect x="126" y="98" width="26" height="26" rx="7" fill="#03152F"/></g>
-              <circle cx="214" cy="110" r="9" fill="#086BFF" stroke="#fff" stroke-width="3"/>
-            </svg>
-            <span class="ph-taxi" aria-hidden="true">🚕</span>
+    <!-- RIGHT COLUMN -->
+    <aside class="top-right">
+      <!-- How it works (compact) -->
+      <div class="panel how-mini reveal" id="how">
+        <h2 class="panel-title" data-i18n="how.title">How it works</h2>
+        <div class="how-steps">
+          <span class="how-line" aria-hidden="true"></span>
+          <div class="how-step">
+            <span class="how-ic ic-pin" aria-hidden="true"></span><span class="how-n">1</span>
+            <b data-i18n="how.s1t">Choose your pickup</b>
+            <small data-i18n="how.s1d">Set your pickup location on the map.</small>
+          </div>
+          <div class="how-step">
+            <span class="how-ic ic-route" aria-hidden="true"></span><span class="how-n">2</span>
+            <b data-i18n="how.s2t">Enter your destination</b>
+            <small data-i18n="how.s2d">Add your destination and see the price.</small>
+          </div>
+          <div class="how-step">
+            <span class="how-ic ic-car" aria-hidden="true"></span><span class="how-n">3</span>
+            <b data-i18n="how.s3t">Select your <span translate="no">GARDAŞ</span></b>
+            <small data-i18n="how.s3d">Choose the ride that suits you best.</small>
+          </div>
+          <div class="how-step">
+            <span class="how-ic ic-shield" aria-hidden="true"></span><span class="how-n">4</span>
+            <b data-i18n="how.s4t">Track your driver</b>
+            <small data-i18n="how.s4d">Track your driver in real time.</small>
           </div>
         </div>
       </div>
 
-      <!-- floating driver card -->
-      <div class="float-card fc-driver">
-        <div class="fc-driver-head">
-          <span data-i18n="phone.yourdriver">Your driver</span>
-          <i class="arr">→</i>
+      <!-- Video card -->
+      <div class="panel video-card reveal">
+        <div class="video-copy">
+          <h3 data-i18n="video.title">See how easy it is to use <span translate="no">GARDAŞ</span></h3>
+          <p data-i18n="video.text">Watch a quick 60-second video and start your ride in minutes.</p>
+          <div class="video-scrub"><span class="vs-dot"></span><span class="vs-track"><i></i></span><small translate="no">0:00 / 1:00</small></div>
         </div>
-        <b class="fc-driver-eta" data-i18n="phone.eta">2 min away</b>
-        <div class="fc-driver-body">
-          <img src="assets/ref-driver-person.png" alt="" class="fc-avatar">
-          <div>
-            <div class="fc-driver-name"><b translate="no">Mehmet K.</b><span class="fc-rating">4.9 <i>★</i></span></div>
-            <small class="fc-plate" translate="no">348 123</small>
-            <small class="fc-car" translate="no">Mercedes-Benz E-Class</small>
-          </div>
+        <div class="video-thumb" role="img" aria-label="GARDAŞ intro video">
+          <button class="video-play" type="button" aria-label="Play video"></button>
         </div>
       </div>
 
-      <!-- floating price card -->
-      <div class="float-card fc-price">
-        <div>
-          <small data-i18n="phone.estprice">Estimated price</small>
-          <b class="fc-amount" translate="no">120 ₺</b>
-          <small class="fc-pay" data-i18n="phone.cash">Cash payment</small>
+      <!-- Ride options (compact) -->
+      <div class="panel rides-mini reveal" id="rides">
+        <h2 class="panel-title" data-i18n="rides.title">Ride options</h2>
+        <div class="rides-mini-grid">
+          <article class="ride-card">
+            <div class="ride-img"><img src="assets/mockup-crop-ride.png" alt="GARDAŞ Ride vehicle" loading="lazy"></div>
+            <h3 translate="no">GARDAŞ Ride</h3>
+            <div class="ride-cap"><span class="cap"><i class="ic-user"></i>1–4</span><span class="cap"><i class="ic-bag"></i>2</span></div>
+            <p data-i18n="rides.ride">Affordable everyday rides for local trips.</p>
+            <a class="ride-more" href="https://app.gardasapp.com" data-app-link><span data-i18n="rides.more">Learn more</span> <i class="arr">→</i></a>
+          </article>
+          <article class="ride-card">
+            <div class="ride-img"><img src="assets/mockup-crop-xl.png" alt="GARDAŞ XL vehicle" loading="lazy"></div>
+            <h3 translate="no">GARDAŞ XL</h3>
+            <div class="ride-cap"><span class="cap"><i class="ic-user"></i>1–6</span><span class="cap"><i class="ic-bag"></i>4</span></div>
+            <p data-i18n="rides.xl">More space for groups and extra luggage.</p>
+            <a class="ride-more" href="https://app.gardasapp.com" data-app-link><span data-i18n="rides.more">Learn more</span> <i class="arr">→</i></a>
+          </article>
+          <article class="ride-card">
+            <div class="ride-img"><img src="assets/mockup-crop-airport.png" alt="GARDAŞ Airport vehicle" loading="lazy"><span class="ride-plane" aria-hidden="true">✈</span></div>
+            <h3 translate="no">GARDAŞ Airport</h3>
+            <div class="ride-cap"><span class="cap"><i class="ic-user"></i>1–4</span><span class="cap"><i class="ic-bag"></i>3</span></div>
+            <p data-i18n="rides.airport">Comfortable airport transfers on time.</p>
+            <a class="ride-more" href="https://app.gardasapp.com" data-app-link><span data-i18n="rides.more">Learn more</span> <i class="arr">→</i></a>
+          </article>
         </div>
-        <span class="fc-wallet" aria-hidden="true"></span>
       </div>
-    </div>
+    </aside>
+  </section>
+
+  <!-- ===== TRUST BAR (full width) ===== -->
+  <div class="trust-bar reveal">
+    <div class="trust-item"><span class="trust-ic ic-users" aria-hidden="true"></span><div><b translate="no">2K+</b><span data-i18n="trust.drivers">Verified local drivers</span></div></div>
+    <div class="trust-item"><span class="trust-ic ic-support" aria-hidden="true"></span><div><b translate="no">24/7</b><span data-i18n="trust.support">Customer support</span></div></div>
+    <div class="trust-item"><span class="trust-ic ic-live" aria-hidden="true"></span><div><b data-i18n="trust.livev">Live</b><span data-i18n="trust.track">Driver tracking</span></div></div>
+    <div class="trust-item"><span class="trust-ic ic-cash" aria-hidden="true"></span><div><b data-i18n="trust.cashv">Cash</b><span data-i18n="trust.payments">Payments</span></div></div>
+    <div class="trust-item"><span class="trust-ic ic-pin" aria-hidden="true"></span><div><b data-i18n="trust.allv">All over</b><span data-i18n="trust.coverage">North Cyprus</span></div></div>
   </div>
 
-  <!-- ============ SECTION 2 — TRUST BAR ============ -->
-  <div class="wrap">
-    <div class="trust-bar reveal">
-      <div class="trust-item">
-        <span class="trust-ic ic-users" aria-hidden="true"></span>
-        <div><b translate="no">2K+</b><span data-i18n="trust.drivers">Verified local drivers</span></div>
-      </div>
-      <div class="trust-item">
-        <span class="trust-ic ic-support" aria-hidden="true"></span>
-        <div><b translate="no">24/7</b><span data-i18n="trust.support">Customer support</span></div>
-      </div>
-      <div class="trust-item">
-        <span class="trust-ic ic-live" aria-hidden="true"></span>
-        <div><b data-i18n="trust.livev">Live</b><span data-i18n="trust.track">Driver tracking</span></div>
-      </div>
-      <div class="trust-item">
-        <span class="trust-ic ic-cash" aria-hidden="true"></span>
-        <div><b data-i18n="trust.cashv">Cash</b><span data-i18n="trust.payments">Payments</span></div>
-      </div>
-      <div class="trust-item">
-        <span class="trust-ic ic-pin" aria-hidden="true"></span>
-        <div><b data-i18n="trust.allv">All over</b><span data-i18n="trust.coverage">North Cyprus</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SECTION 3 — HOW IT WORKS ============ -->
-<section class="section how-section" id="how">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2 data-i18n="how.title">How it works</h2>
-    </div>
-    <div class="steps reveal">
-      <span class="steps-line" aria-hidden="true"></span>
-      <article class="step">
-        <span class="step-ic ic-pin" aria-hidden="true"></span>
-        <span class="step-n">1</span>
-        <h3 data-i18n="how.s1t">Choose your pickup</h3>
-        <p data-i18n="how.s1d">Set your pickup location on the map.</p>
-      </article>
-      <article class="step">
-        <span class="step-ic ic-route" aria-hidden="true"></span>
-        <span class="step-n">2</span>
-        <h3 data-i18n="how.s2t">Enter your destination</h3>
-        <p data-i18n="how.s2d">Add your destination and see the price.</p>
-      </article>
-      <article class="step">
-        <span class="step-ic ic-car" aria-hidden="true"></span>
-        <span class="step-n">3</span>
-        <h3 data-i18n="how.s3t">Select your <span translate="no">GARDAŞ</span></h3>
-        <p data-i18n="how.s3d">Choose the ride that suits you best.</p>
-      </article>
-      <article class="step">
-        <span class="step-ic ic-shield" aria-hidden="true"></span>
-        <span class="step-n">4</span>
-        <h3 data-i18n="how.s4t">Track your driver</h3>
-        <p data-i18n="how.s4d">Track your driver in real time.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SECTION 4 — RIDE OPTIONS ============ -->
-<section class="section rides-section" id="rides">
-  <div class="wrap">
-    <div class="rides-panel reveal">
-      <div class="section-head">
-        <h2 data-i18n="rides.title">Ride options</h2>
-      </div>
-      <div class="ride-grid">
-        <article class="ride-card">
-          <div class="ride-img"><img src="assets/mockup-crop-ride.png" alt="GARDAŞ Ride vehicle" loading="lazy"></div>
-          <h3 translate="no">GARDAŞ Ride</h3>
-          <div class="ride-cap">
-            <span class="cap"><i class="ic-user"></i>1–4</span>
-            <span class="cap"><i class="ic-bag"></i>2</span>
-          </div>
-          <p data-i18n="rides.ride">Affordable everyday rides for local trips.</p>
-          <a class="ride-more" href="https://app.gardasapp.com" data-app-link><span data-i18n="rides.more">Learn more</span> <i class="arr">→</i></a>
-        </article>
-        <article class="ride-card">
-          <div class="ride-img"><img src="assets/mockup-crop-xl.png" alt="GARDAŞ XL vehicle" loading="lazy"></div>
-          <h3 translate="no">GARDAŞ XL</h3>
-          <div class="ride-cap">
-            <span class="cap"><i class="ic-user"></i>1–6</span>
-            <span class="cap"><i class="ic-bag"></i>4</span>
-          </div>
-          <p data-i18n="rides.xl">More space for groups and extra luggage.</p>
-          <a class="ride-more" href="https://app.gardasapp.com" data-app-link><span data-i18n="rides.more">Learn more</span> <i class="arr">→</i></a>
-        </article>
-        <article class="ride-card">
-          <div class="ride-img"><img src="assets/mockup-crop-airport.png" alt="GARDAŞ Airport vehicle" loading="lazy"><span class="ride-plane" aria-hidden="true">✈</span></div>
-          <h3 translate="no">GARDAŞ Airport</h3>
-          <div class="ride-cap">
-            <span class="cap"><i class="ic-user"></i>1–4</span>
-            <span class="cap"><i class="ic-bag"></i>3</span>
-          </div>
-          <p data-i18n="rides.airport">Comfortable airport transfers on time.</p>
-          <a class="ride-more" href="https://app.gardasapp.com" data-app-link><span data-i18n="rides.more">Learn more</span> <i class="arr">→</i></a>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SECTION 5 — COVERAGE + WHY ============ -->
-<section class="section coverage-section" id="coverage">
-  <div class="wrap coverage-grid">
-    <!-- left: dark map -->
-    <div class="map-card reveal">
+  <!-- ===== ROW 2: COVERAGE MAP | WHY GARDAŞ | DRIVER CTA ===== -->
+  <section class="mid-row">
+    <!-- Coverage map -->
+    <div class="map-card reveal" id="coverage">
       <h2 data-i18n="coverage.title">We cover all over North Cyprus</h2>
       <div class="map-canvas">
         <svg class="nc-map" viewBox="0 0 620 360" role="img" aria-label="North Cyprus service map">
-          <defs>
-            <linearGradient id="land" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12356e"/><stop offset="1" stop-color="#0c2650"/></linearGradient>
-          </defs>
+          <defs><linearGradient id="land" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12356e"/><stop offset="1" stop-color="#0c2650"/></linearGradient></defs>
           <path d="M40 170 C120 100 220 140 300 145 C390 150 470 100 545 88 C588 82 610 105 605 150 L600 220 C540 236 440 220 330 224 C230 228 150 244 100 232 C60 222 36 205 40 170 Z" fill="url(#land)" stroke="rgba(120,165,255,.35)" stroke-width="1.4"/>
           <path class="map-route" d="M150 165 L235 200 L300 150 L430 178 L470 150" fill="none" stroke="#1683FF" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 8"/>
-          <g class="mk" data-city="Girne" data-note="coverage.girne" tabindex="0" role="button" aria-label="Girne">
-            <circle class="mk-ring" cx="235" cy="150" r="15"/><circle class="mk-dot" cx="235" cy="150" r="6"/>
-          </g>
-          <g class="mk" data-city="Lefkoşa" data-note="coverage.lefkosa" tabindex="0" role="button" aria-label="Lefkoşa">
-            <circle class="mk-ring" cx="300" cy="205" r="15"/><circle class="mk-dot" cx="300" cy="205" r="6"/>
-          </g>
-          <g class="mk" data-city="Gazimağusa" data-note="coverage.magusa" tabindex="0" role="button" aria-label="Gazimağusa">
-            <circle class="mk-ring" cx="430" cy="200" r="15"/><circle class="mk-dot" cx="430" cy="200" r="6"/>
-          </g>
-          <g class="mk" data-city="İskele" data-note="coverage.iskele" tabindex="0" role="button" aria-label="İskele">
-            <circle class="mk-ring" cx="500" cy="150" r="15"/><circle class="mk-dot" cx="500" cy="150" r="6"/>
-          </g>
-          <g class="mk" data-city="Ercan Airport" data-note="coverage.ercan" tabindex="0" role="button" aria-label="Ercan Airport">
-            <circle class="mk-ring" cx="330" cy="165" r="15"/><circle class="mk-dot air" cx="330" cy="165" r="6"/>
-          </g>
+          <g class="mk" data-city="Girne" data-note="coverage.girne" tabindex="0" role="button" aria-label="Girne"><circle class="mk-ring" cx="235" cy="150" r="15"/><circle class="mk-dot" cx="235" cy="150" r="6"/></g>
+          <g class="mk" data-city="Lefkoşa" data-note="coverage.lefkosa" tabindex="0" role="button" aria-label="Lefkoşa"><circle class="mk-ring" cx="300" cy="205" r="15"/><circle class="mk-dot" cx="300" cy="205" r="6"/></g>
+          <g class="mk" data-city="Gazimağusa" data-note="coverage.magusa" tabindex="0" role="button" aria-label="Gazimağusa"><circle class="mk-ring" cx="430" cy="200" r="15"/><circle class="mk-dot" cx="430" cy="200" r="6"/></g>
+          <g class="mk" data-city="İskele" data-note="coverage.iskele" tabindex="0" role="button" aria-label="İskele"><circle class="mk-ring" cx="500" cy="150" r="15"/><circle class="mk-dot" cx="500" cy="150" r="6"/></g>
+          <g class="mk" data-city="Ercan Airport" data-note="coverage.ercan" tabindex="0" role="button" aria-label="Ercan Airport"><circle class="mk-ring" cx="330" cy="165" r="15"/><circle class="mk-dot air" cx="330" cy="165" r="6"/></g>
         </svg>
         <span class="map-lbl l-girne" translate="no">Girne</span>
         <span class="map-lbl l-iskele" translate="no">İskele</span>
@@ -279,66 +234,27 @@
         <span class="map-lbl l-ercan" translate="no">Ercan Airport</span>
         <div class="map-city-card">
           <img src="assets/ref-region-girne.png" alt="" id="mapCityImg">
-          <div>
-            <b translate="no" id="mapCityName">Girne</b>
-            <span id="mapCityNote" data-i18n="coverage.girne">Fast pickups all around Girne and surroundings.</span>
-          </div>
+          <div><b translate="no" id="mapCityName">Girne</b><span id="mapCityNote" data-i18n="coverage.girne">Fast pickups all around Girne and surroundings.</span></div>
         </div>
       </div>
     </div>
 
-    <!-- right: why gardas -->
+    <!-- Why GARDAŞ -->
     <div class="why reveal">
-      <div class="section-head why-head">
-        <h2 data-i18n="why.title">Why <span translate="no">GARDAŞ</span>?</h2>
-      </div>
+      <div class="section-head why-head"><h2 data-i18n="why.title">Why <span translate="no">GARDAŞ</span>?</h2></div>
       <div class="why-grid">
-        <article class="feature-card">
-          <span class="feat-ic ic-users" aria-hidden="true"></span>
-          <h3 data-i18n="why.verified.t">Verified local drivers</h3>
-          <p data-i18n="why.verified.d">All our drivers are background checked and trained.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feat-ic ic-live" aria-hidden="true"></span>
-          <h3 data-i18n="why.track.t">Live tracking</h3>
-          <p data-i18n="why.track.d">Follow your driver in real time on the map.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feat-ic ic-support" aria-hidden="true"></span>
-          <h3 data-i18n="why.support.t">24/7 support</h3>
-          <p data-i18n="why.support.d">We are here for you anytime you need us.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feat-ic ic-shield" aria-hidden="true"></span>
-          <h3 data-i18n="why.safe.t">Safe &amp; reliable</h3>
-          <p data-i18n="why.safe.d">Your safety is our priority.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feat-ic ic-cash" aria-hidden="true"></span>
-          <h3 data-i18n="why.cash.t">Cash payments</h3>
-          <p data-i18n="why.cash.d">Pay in cash easily to your driver.</p>
-        </article>
-        <article class="feature-card">
-          <span class="feat-ic ic-card" aria-hidden="true"></span>
-          <h3 data-i18n="why.card.t">Card payments</h3>
-          <p data-i18n="why.card.d">Coming soon. You will be able to pay by card.</p>
-        </article>
-        <article class="feature-card feature-wide">
-          <span class="feat-ic ic-plane" aria-hidden="true"></span>
-          <div>
-            <h3 data-i18n="why.airport.t">Airport transfers</h3>
-            <p data-i18n="why.airport.d">On-time pickups and comfortable journeys to or from the airport.</p>
-          </div>
-        </article>
+        <article class="feature-card"><span class="feat-ic ic-users" aria-hidden="true"></span><h3 data-i18n="why.verified.t">Verified local drivers</h3><p data-i18n="why.verified.d">All our drivers are background checked and trained.</p></article>
+        <article class="feature-card"><span class="feat-ic ic-live" aria-hidden="true"></span><h3 data-i18n="why.track.t">Live tracking</h3><p data-i18n="why.track.d">Follow your driver in real time on the map.</p></article>
+        <article class="feature-card"><span class="feat-ic ic-support" aria-hidden="true"></span><h3 data-i18n="why.support.t">24/7 support</h3><p data-i18n="why.support.d">We are here for you anytime you need us.</p></article>
+        <article class="feature-card"><span class="feat-ic ic-shield" aria-hidden="true"></span><h3 data-i18n="why.safe.t">Safe &amp; reliable</h3><p data-i18n="why.safe.d">Your safety is our priority.</p></article>
+        <article class="feature-card"><span class="feat-ic ic-cash" aria-hidden="true"></span><h3 data-i18n="why.cash.t">Cash payments</h3><p data-i18n="why.cash.d">Pay in cash easily to your driver.</p></article>
+        <article class="feature-card"><span class="feat-ic ic-card" aria-hidden="true"></span><h3 data-i18n="why.card.t">Card payments</h3><p data-i18n="why.card.d">Coming soon. You will be able to pay by card.</p></article>
+        <article class="feature-card feature-wide"><span class="feat-ic ic-plane" aria-hidden="true"></span><div><h3 data-i18n="why.airport.t">Airport transfers</h3><p data-i18n="why.airport.d">On-time pickups and comfortable journeys to or from the airport.</p></div></article>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ============ SECTION 6 — DRIVER CTA ============ -->
-<section class="section driver-section" id="driver">
-  <div class="wrap">
-    <div class="driver-panel reveal">
+    <!-- Driver CTA -->
+    <div class="driver-panel reveal" id="driver">
       <div class="driver-copy">
         <h2 data-i18n="driver.title">Drive with <span translate="no">GARDAŞ</span>.<br>Earn on your schedule.</h2>
         <ul class="driver-list">
@@ -368,58 +284,46 @@
         <img class="driver-car" src="assets/north-cyprus-coast.jpg" alt="">
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ SECTION 7 — DOWNLOAD CTA ============ -->
-<section class="section download-section" id="download">
-  <div class="wrap">
-    <div class="download-panel reveal">
-      <div class="dl-left">
-        <div class="phone dl-phone" aria-hidden="true">
-          <div class="phone-notch"></div>
-          <div class="phone-screen logo-screen">
-            <img src="assets/gardas-logo-white.svg" alt="">
-            <strong translate="no">GARDAŞ</strong>
-            <span data-i18n="download.yourride">Your ride,<br>your way.</span>
-          </div>
+  <!-- ===== DOWNLOAD (full width) ===== -->
+  <section class="download-panel reveal" id="download">
+    <div class="dl-left">
+      <div class="phone dl-phone" aria-hidden="true">
+        <div class="phone-notch"></div>
+        <div class="phone-screen logo-screen">
+          <img src="assets/gardas-logo-white.svg" alt="">
+          <strong translate="no">GARDAŞ</strong>
+          <span data-i18n="download.yourride">Your ride,<br>your way.</span>
         </div>
-      </div>
-      <div class="dl-center">
-        <h2 data-i18n="download.title">North Cyprus is moving with <span translate="no">GARDAŞ</span>.</h2>
-        <p data-i18n="download.text">Download the app and enjoy a better ride experience.</p>
-        <div class="dl-qr-row">
-          <a class="dl-qr" href="https://app.gardasapp.com" data-app-link aria-label="Open GARDAŞ web app">
-            <img src="assets/qr-webapp.svg" alt="QR code to open the GARDAŞ web app">
-          </a>
-          <div class="dl-qr-copy">
-            <h3 data-i18n="download.web">Open <span translate="no">GARDAŞ</span> Web App</h3>
-            <p data-i18n="download.noreq">No download required.</p>
-            <a class="btn primary" href="https://app.gardasapp.com" data-app-link><span data-i18n="download.button">Open Web App</span> <i class="arr">→</i></a>
-          </div>
-        </div>
-        <div class="store-row">
-          <span class="store-badge dark"><span class="store-ic apple"></span><span class="store-tx"><small data-i18n="store.on">Coming soon on</small><b translate="no">App Store</b></span></span>
-          <span class="store-badge dark"><span class="store-ic play"></span><span class="store-tx"><small data-i18n="store.on">Coming soon on</small><b translate="no">Google Play</b></span></span>
-        </div>
-      </div>
-      <div class="dl-right" aria-hidden="true">
-        <div class="dl-photo"></div>
       </div>
     </div>
-  </div>
-</section>
+    <div class="dl-center">
+      <h2 data-i18n="download.title">North Cyprus is moving with <span translate="no">GARDAŞ</span>.</h2>
+      <p data-i18n="download.text">Download the app and enjoy a better ride experience.</p>
+      <div class="dl-qr-row">
+        <a class="dl-qr" href="https://app.gardasapp.com" data-app-link aria-label="Open GARDAŞ web app"><img src="assets/qr-webapp.svg" alt="QR code to open the GARDAŞ web app"></a>
+        <div class="dl-qr-copy">
+          <h3 data-i18n="download.web">Open <span translate="no">GARDAŞ</span> Web App</h3>
+          <p data-i18n="download.noreq">No download required.</p>
+          <a class="btn primary" href="https://app.gardasapp.com" data-app-link><span data-i18n="download.button">Open Web App</span> <i class="arr">→</i></a>
+        </div>
+      </div>
+      <div class="store-row">
+        <span class="store-badge dark"><span class="store-ic apple"></span><span class="store-tx"><small data-i18n="store.on">Coming soon on</small><b translate="no">App Store</b></span></span>
+        <span class="store-badge dark"><span class="store-ic play"></span><span class="store-tx"><small data-i18n="store.on">Coming soon on</small><b translate="no">Google Play</b></span></span>
+      </div>
+    </div>
+    <div class="dl-right" aria-hidden="true"><div class="dl-photo"></div></div>
+  </section>
 
 </main>
 
-<!-- ============ SECTION 8 — FOOTER ============ -->
+<!-- ============ FOOTER ============ -->
 <footer class="footer" id="support">
   <div class="wrap footer-inner">
     <div class="footer-brand">
-      <a class="brand" href="#home">
-        <img src="assets/gardas-logo-white.svg" alt="" class="brand-logo">
-        <span class="brand-word" translate="no">GARDAŞ</span>
-      </a>
+      <a class="brand" href="#home"><img src="assets/gardas-logo-white.svg" alt="" class="brand-logo"><span class="brand-word" translate="no">GARDAŞ</span></a>
       <p data-i18n="footer.tag">The #1 local mobility platform in North Cyprus. Safe. Reliable. Local.</p>
       <div class="socials">
         <a href="https://instagram.com/gardas.app" aria-label="Instagram" class="soc ic-instagram"></a>
