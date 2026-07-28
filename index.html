@@ -93,16 +93,34 @@
               <div class="ph-field ph-pickup"><span class="ph-dot green"></span><div><small data-i18n="phone.pickup">Pickup location</small><b translate="no">Girne, Merkez</b></div></div>
               <div class="ph-field ph-where"><span class="ph-plus">+</span><b data-i18n="phone.where">Where to?</b></div>
               <div class="ph-map">
-                <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <rect width="300" height="300" fill="#eef4fb"/>
-                  <path d="M-20 120 Q80 90 160 130 T340 120" fill="none" stroke="#dce7f4" stroke-width="16"/>
-                  <path d="M60 -20 Q90 120 150 180 T240 340" fill="none" stroke="#dce7f4" stroke-width="12"/>
-                  <path class="ph-route" d="M70 232 L104 232 Q120 232 120 214 L120 128 Q120 110 138 110 L214 110" fill="none" stroke="#086BFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="70" cy="232" r="9" fill="#19c37d" stroke="#fff" stroke-width="3"/>
-                  <g class="ph-carmark"><rect x="126" y="98" width="26" height="26" rx="7" fill="#03152F"/></g>
-                  <circle cx="214" cy="110" r="9" fill="#086BFF" stroke="#fff" stroke-width="3"/>
+                <svg viewBox="0 0 300 330" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <rect width="300" height="330" fill="#e8edf4"/>
+                  <!-- water -->
+                  <path d="M0 258 Q70 244 150 262 T300 252 L300 330 L0 330 Z" fill="#cfe0f4"/>
+                  <!-- parks -->
+                  <rect x="16" y="34" width="66" height="52" rx="11" fill="#d6ebd8"/>
+                  <rect x="206" y="150" width="86" height="60" rx="12" fill="#d6ebd8"/>
+                  <!-- blocks -->
+                  <g fill="#f2f6fb">
+                    <rect x="104" y="30" width="72" height="60" rx="8"/>
+                    <rect x="196" y="30" width="90" height="56" rx="8"/>
+                    <rect x="16" y="112" width="70" height="70" rx="8"/>
+                    <rect x="150" y="150" width="42" height="64" rx="8"/>
+                  </g>
+                  <!-- streets -->
+                  <g stroke="#ffffff" stroke-width="9" stroke-linecap="round">
+                    <path d="M-10 100 H310"/><path d="M-10 210 H310"/>
+                    <path d="M96 -10 V240"/><path d="M196 -10 V240"/>
+                  </g>
+                  <g stroke="#e0e8f2" stroke-width="1.5">
+                    <path d="M-10 150 H310"/><path d="M50 -10 V250"/><path d="M250 -10 V250"/>
+                  </g>
+                  <!-- route -->
+                  <path class="ph-route" d="M70 250 L110 250 Q126 250 126 232 L126 132 Q126 114 144 114 L214 114" fill="none" stroke="#086BFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="70" cy="250" r="9" fill="#19c37d" stroke="#fff" stroke-width="3"/>
+                  <circle cx="214" cy="114" r="9" fill="#086BFF" stroke="#fff" stroke-width="3"/>
+                  <g class="ph-carmark"><circle cx="126" cy="196" r="13" fill="#03152F"/><circle cx="126" cy="196" r="13" fill="none" stroke="#fff" stroke-width="2.5"/><text x="126" y="201" text-anchor="middle" font-size="13">🚕</text></g>
                 </svg>
-                <span class="ph-taxi" aria-hidden="true">🚕</span>
               </div>
             </div>
           </div>
@@ -217,21 +235,36 @@
     <div class="map-card reveal" id="coverage">
       <h2 data-i18n="coverage.title">We cover all over North Cyprus</h2>
       <div class="map-canvas">
-        <svg class="nc-map" viewBox="0 0 620 360" role="img" aria-label="North Cyprus service map">
-          <defs><linearGradient id="land" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12356e"/><stop offset="1" stop-color="#0c2650"/></linearGradient></defs>
-          <path d="M40 170 C120 100 220 140 300 145 C390 150 470 100 545 88 C588 82 610 105 605 150 L600 220 C540 236 440 220 330 224 C230 228 150 244 100 232 C60 222 36 205 40 170 Z" fill="url(#land)" stroke="rgba(120,165,255,.35)" stroke-width="1.4"/>
-          <path class="map-route" d="M150 165 L235 200 L300 150 L430 178 L470 150" fill="none" stroke="#1683FF" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 8"/>
-          <g class="mk" data-city="Girne" data-note="coverage.girne" tabindex="0" role="button" aria-label="Girne"><circle class="mk-ring" cx="235" cy="150" r="15"/><circle class="mk-dot" cx="235" cy="150" r="6"/></g>
-          <g class="mk" data-city="Lefkoşa" data-note="coverage.lefkosa" tabindex="0" role="button" aria-label="Lefkoşa"><circle class="mk-ring" cx="300" cy="205" r="15"/><circle class="mk-dot" cx="300" cy="205" r="6"/></g>
-          <g class="mk" data-city="Gazimağusa" data-note="coverage.magusa" tabindex="0" role="button" aria-label="Gazimağusa"><circle class="mk-ring" cx="430" cy="200" r="15"/><circle class="mk-dot" cx="430" cy="200" r="6"/></g>
-          <g class="mk" data-city="İskele" data-note="coverage.iskele" tabindex="0" role="button" aria-label="İskele"><circle class="mk-ring" cx="500" cy="150" r="15"/><circle class="mk-dot" cx="500" cy="150" r="6"/></g>
-          <g class="mk" data-city="Ercan Airport" data-note="coverage.ercan" tabindex="0" role="button" aria-label="Ercan Airport"><circle class="mk-ring" cx="330" cy="165" r="15"/><circle class="mk-dot air" cx="330" cy="165" r="6"/></g>
+        <svg class="nc-map" viewBox="0 0 560 300" role="img" aria-label="North Cyprus service map">
+          <defs>
+            <radialGradient id="isleGlow" cx="46%" cy="46%" r="70%">
+              <stop offset="0" stop-color="#2f7dff" stop-opacity=".55"/>
+              <stop offset=".6" stop-color="#123f80" stop-opacity=".3"/>
+              <stop offset="1" stop-color="#0a2a63" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <path class="isle-fill" d="M50 208 C110 190 175 178 238 168 C322 154 402 136 458 104 C494 84 518 68 542 54 C530 84 506 110 470 132 C414 166 350 186 286 200 C222 214 138 238 90 228 C66 223 42 220 50 208 Z" fill="url(#isleGlow)"/>
+          <g class="isle-dots" fill="#4a93ff" opacity=".5">
+            <circle cx="120" cy="198" r="1.6"/><circle cx="175" cy="188" r="1.6"/><circle cx="235" cy="182" r="1.6"/><circle cx="285" cy="172" r="1.6"/><circle cx="335" cy="158" r="1.6"/><circle cx="400" cy="140" r="1.6"/><circle cx="455" cy="118" r="1.6"/><circle cx="500" cy="92" r="1.6"/><circle cx="205" cy="200" r="1.6"/><circle cx="150" cy="210" r="1.6"/><circle cx="360" cy="182" r="1.6"/><circle cx="300" cy="196" r="1.6"/>
+          </g>
+          <path class="isle-line" d="M50 208 C110 190 175 178 238 168 C322 154 402 136 458 104 C494 84 518 68 542 54 C530 84 506 110 470 132 C414 166 350 186 286 200 C222 214 138 238 90 228 C66 223 42 220 50 208 Z" fill="none" stroke="#5aa6ff" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="0.1 7.5" filter="url(#softGlow)"/>
+          <path class="net" d="M235 150 L300 175 L250 192 M300 175 L370 165 L430 122 M300 175 L430 122" fill="none" stroke="#3f86ff" stroke-width="1.3" stroke-opacity=".55" stroke-dasharray="4 6"/>
+          <g class="mk" data-city="Girne" data-note="coverage.girne" tabindex="0" role="button" aria-label="Girne"><circle class="mk-ring" cx="235" cy="150" r="16"/><circle class="mk-dot" cx="235" cy="150" r="6.5"/></g>
+          <g class="mk" data-city="Lefkoşa" data-note="coverage.lefkosa" tabindex="0" role="button" aria-label="Lefkoşa"><circle class="mk-ring" cx="250" cy="192" r="16"/><circle class="mk-dot" cx="250" cy="192" r="6.5"/></g>
+          <g class="mk" data-city="Gazimağusa" data-note="coverage.magusa" tabindex="0" role="button" aria-label="Gazimağusa"><circle class="mk-ring" cx="370" cy="165" r="16"/><circle class="mk-dot" cx="370" cy="165" r="6.5"/></g>
+          <g class="mk" data-city="İskele" data-note="coverage.iskele" tabindex="0" role="button" aria-label="İskele"><circle class="mk-ring" cx="430" cy="122" r="16"/><circle class="mk-dot" cx="430" cy="122" r="6.5"/></g>
+          <g class="mk" data-city="Ercan Airport" data-note="coverage.ercan" tabindex="0" role="button" aria-label="Ercan Airport"><circle class="mk-ring" cx="300" cy="175" r="16"/><circle class="mk-dot air" cx="300" cy="175" r="6.5"/></g>
+          <g class="map-labels" font-size="14" font-weight="700" fill="#e2ecff">
+            <text x="235" y="132" text-anchor="middle" translate="no">Girne</text>
+            <text x="448" y="112" translate="no">İskele</text>
+            <text x="250" y="214" text-anchor="middle" translate="no">Lefkoşa</text>
+            <text x="388" y="160" translate="no">Gazimağusa</text>
+            <text x="290" y="172" text-anchor="end" translate="no">Ercan Airport</text>
+          </g>
         </svg>
-        <span class="map-lbl l-girne" translate="no">Girne</span>
-        <span class="map-lbl l-iskele" translate="no">İskele</span>
-        <span class="map-lbl l-lefkosa" translate="no">Lefkoşa</span>
-        <span class="map-lbl l-magusa" translate="no">Gazimağusa</span>
-        <span class="map-lbl l-ercan" translate="no">Ercan Airport</span>
         <div class="map-city-card">
           <img src="assets/ref-region-girne.png" alt="" id="mapCityImg">
           <div><b translate="no" id="mapCityName">Girne</b><span id="mapCityNote" data-i18n="coverage.girne">Fast pickups all around Girne and surroundings.</span></div>

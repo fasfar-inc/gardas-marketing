@@ -201,22 +201,23 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:800;letter-spacing:-.02em;line-h
 .trust-item span{display:block;font-size:12px;color:var(--muted);margin-top:3px}
 
 /* ---------- ROW 2: mid-row ---------- */
-.mid-row{display:grid;grid-template-columns:1fr 1.12fr .92fr;gap:var(--gap);align-items:stretch}
+.mid-row{display:grid;grid-template-columns:1fr 1.12fr .92fr;gap:var(--gap);align-items:start}
 .map-card{background:linear-gradient(165deg,#071c3e,var(--navy-950));border-radius:var(--r);padding:26px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--sh);display:flex;flex-direction:column}
 .map-card::before{content:"";position:absolute;inset:0;background:radial-gradient(440px 340px at 80% 20%,rgba(8,107,255,.24),transparent 60%);pointer-events:none}
 .map-card h2{position:relative;color:#fff;font-size:clamp(20px,1.8vw,26px);margin-bottom:14px}
-.map-canvas{position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;min-height:300px}
+.map-canvas{position:relative;min-height:250px;padding-bottom:8px}
 .nc-map{width:100%;height:auto}
 .mk{cursor:pointer;outline:none}
 .mk-ring{fill:rgba(90,160,255,.22);transform-box:fill-box;transform-origin:center;animation:mkpulse 2.4s ease-out infinite}
 .mk:nth-of-type(2) .mk-ring{animation-delay:.4s}.mk:nth-of-type(3) .mk-ring{animation-delay:.8s}.mk:nth-of-type(4) .mk-ring{animation-delay:1.2s}.mk:nth-of-type(5) .mk-ring{animation-delay:1.6s}
 @keyframes mkpulse{0%{transform:scale(.5);opacity:.7}70%{transform:scale(1.5);opacity:0}100%{opacity:0}}
-.mk-dot{fill:var(--blue-500);stroke:#fff;stroke-width:2.5;transition:fill .2s;filter:drop-shadow(0 0 5px rgba(90,160,255,.8))}
-.mk-dot.air{fill:var(--blue-600)}
+.mk-dot{fill:#8ec2ff;stroke:#fff;stroke-width:2.5;transition:fill .2s;filter:drop-shadow(0 0 6px rgba(90,160,255,1))}
+.mk-dot.air{fill:var(--blue-500)}
 .mk:hover .mk-dot,.mk.active .mk-dot,.mk:focus-visible .mk-dot{fill:#fff}
-.map-route{filter:drop-shadow(0 0 4px rgba(22,131,255,.7))}
-.map-lbl{position:absolute;font-size:11px;font-weight:600;color:#cfe0ff;pointer-events:none;white-space:nowrap;transform:translate(-50%,-50%)}
-.l-girne{left:38%;top:35%}.l-iskele{left:80%;top:36%}.l-lefkosa{left:48%;top:63%}.l-magusa{left:69%;top:62%}.l-ercan{left:53%;top:40%}
+.isle-line{animation:isleGlow 4s ease-in-out infinite}
+@keyframes isleGlow{0%,100%{opacity:.85}50%{opacity:1}}
+.net{filter:drop-shadow(0 0 3px rgba(63,134,255,.6))}
+.map-labels text{font-family:var(--head);fill:#e2ecff;letter-spacing:-.01em;paint-order:stroke;stroke:rgba(3,18,42,.55);stroke-width:2.6px}
 .map-city-card{position:absolute;left:16px;bottom:16px;display:flex;align-items:center;gap:11px;background:rgba(6,20,44,.85);border:1px solid var(--d-line);border-radius:14px;padding:10px 12px;max-width:250px;backdrop-filter:blur(8px)}
 .map-city-card img{width:46px;height:46px;border-radius:11px;object-fit:cover;flex:none}
 .map-city-card b{display:block;font-family:var(--head);font-size:15px;color:#fff;margin-bottom:2px}
@@ -313,7 +314,7 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:800;letter-spacing:-.02em;line-h
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){
   .reveal{opacity:1!important;transform:none!important;transition:none}
-  .hero-phone,.float-card,.ph-route,.mk-ring,.hero-routes .rt{animation:none}
+  .hero-phone,.float-card,.ph-route,.mk-ring,.hero-routes .rt,.isle-line{animation:none}
   html{scroll-behavior:auto}
 }
 :focus-visible{outline:3px solid var(--blue-500);outline-offset:2px;border-radius:6px}
