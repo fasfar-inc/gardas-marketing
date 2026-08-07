@@ -57,9 +57,10 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(640px 380px at 68% 22%, rgba(29, 116, 255, .34), transparent 66%),
-    linear-gradient(90deg, rgba(4, 16, 38, .95), rgba(6, 23, 52, .86) 50%, rgba(5, 20, 44, .76)),
-    url("assets/marketing-coastline.svg") center bottom / cover no-repeat;
+    radial-gradient(640px 380px at 68% 22%, rgba(29, 116, 255, .3), transparent 66%),
+    linear-gradient(90deg, rgba(4, 16, 38, .92) 0%, rgba(6, 23, 52, .6) 52%, rgba(5, 20, 44, .34) 100%),
+    linear-gradient(180deg, rgba(4,16,38,.25) 0%, rgba(4,16,38,.05) 45%, rgba(4,15,34,.82) 100%),
+    url("assets/north-cyprus-coast.jpg") center / cover no-repeat;
   z-index: -2;
 }
 .hero-panel::after {
@@ -1454,4 +1455,35 @@ img { max-width: 100%; display: block; }
   .footer { grid-template-columns: 1fr 1fr; padding: 44px 22px 22px; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* ================= top-part improvements ================= */
+.hl-h { color: var(--blue-500); }
+
+/* trust strip (full-width band) */
+.site-shell { grid-template-rows: repeat(6, auto); }
+.trust-strip { grid-column: 1 / -1 !important; grid-row: 3 !important; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 26px 64px -6px; padding: 22px 20px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); }
+.trust-strip .trust-item { display: flex; align-items: center; gap: 14px; padding: 4px 18px; position: relative; }
+.trust-strip .trust-item + .trust-item::before { content: ""; position: absolute; left: 0; top: 14%; height: 72%; width: 1px; background: var(--line); }
+.trust-strip [class^="icon-"] { width: 40px; height: 40px; flex: none; }
+.trust-strip [class^="icon-"]::before { width: 30px; height: 30px; }
+.trust-strip b { display: block; font-size: 21px; font-weight: 850; color: var(--ink); line-height: 1; }
+.trust-strip small { display: block; font-size: 12.5px; color: var(--muted); margin-top: 3px; }
+
+/* shift lower sections down one row for the trust strip */
+.regions-section { grid-row: 4 !important; }
+.driver-banner { grid-row: 5 !important; }
+.download-card { grid-row: 5 !important; }
+.footer { grid-row: 6 !important; }
+
+/* balance the "Neden GARDAŞ?" gap: 3-across, two rows */
+.why-section .feature-grid { grid-template-columns: repeat(3, 1fr); gap: 24px 20px; align-content: center; }
+
+@media (max-width: 1080px) {
+  .trust-strip { grid-column: 1 !important; grid-row: auto !important; margin: 20px; }
+  .regions-section, .driver-banner, .download-card, .footer { grid-row: auto !important; }
+}
+@media (max-width: 680px) {
+  .trust-strip { grid-template-columns: 1fr 1fr; }
+  .trust-strip .trust-item + .trust-item::before { display: none; }
 }
