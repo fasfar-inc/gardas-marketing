@@ -73,7 +73,7 @@ p { margin: 0; }
 .section { position: relative; padding: clamp(60px, 8vw, 104px) 0; }
 .why { background: var(--navy-900); }
 .how { background: linear-gradient(180deg, var(--navy-900), var(--navy-850)); }
-.rides-sec { background: var(--navy-850); }
+.vehicles-sec { background: var(--navy-850); }
 .regions-sec { background: linear-gradient(180deg, var(--navy-850), var(--navy-900)); }
 
 .kicker { display: inline-block; font-weight: 800; font-size: 12px; letter-spacing: .18em; color: var(--blue-400); margin-bottom: 14px; text-transform: uppercase; }
@@ -204,19 +204,19 @@ p { margin: 0; }
 /* ==========================================================================
    RIDES
    ========================================================================== */
-.rides { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
-.ride { position: relative; display: flex; flex-direction: column; border-radius: var(--r-xl); overflow: hidden; background: rgba(255,255,255,.035); border: 1px solid var(--line); transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease; }
-.ride:hover { transform: translateY(-6px); box-shadow: var(--sh-card); border-color: rgba(47,128,255,.4); }
-.ride-media { position: relative; height: 172px; display: grid; place-items: center; background: radial-gradient(120% 120% at 50% 18%, #eaf1fb 0, #d7e3f6 72%, #c7d6ef 100%); }
-.ride-media::after { content: ""; position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); width: 64%; height: 18px; background: radial-gradient(closest-side, rgba(6,18,40,.3), transparent 75%); filter: blur(3px); }
-.ride-media img { position: relative; width: 84%; max-height: 128px; object-fit: contain; filter: drop-shadow(0 14px 18px rgba(6,18,40,.3)); }
-.ride.featured { border-color: rgba(47,128,255,.5); box-shadow: 0 22px 55px rgba(31,107,255,.22); }
-.ride-flag { position: absolute; top: 15px; right: 15px; z-index: 2; font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: #fff; background: var(--grad); padding: 6px 12px; border-radius: 999px; box-shadow: var(--sh-blue); }
-.ride-body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
-.ride-body h3 { font-size: 20px; font-weight: 800; color: #fff; }
-.ride-body p { color: var(--muted); font-size: 14.5px; flex: 1; }
-.ride-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-.ride-tags span { font-size: 12px; font-weight: 700; color: #cdddff; background: rgba(47,128,255,.12); border: 1px solid rgba(47,128,255,.22); padding: 6px 12px; border-radius: 999px; }
+.vehicles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+.vcard { display: flex; flex-direction: column; border-radius: var(--r-xl); overflow: hidden; background: rgba(255,255,255,.035); border: 1px solid rgba(47,128,255,.22); transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease; }
+.vcard:hover { transform: translateY(-5px); box-shadow: var(--sh-card); border-color: rgba(47,128,255,.55); }
+.vcard-media { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--navy-800); }
+.vcard-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+.vcard:hover .vcard-media img { transform: scale(1.05); }
+.vcard-body { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.vcard-body h3 { font-size: 20px; font-weight: 800; color: #fff; }
+.vcard-body h3 .hl { color: var(--blue-500); }
+.vcard-body p { color: var(--muted); font-size: 14.5px; margin-bottom: 8px; flex: 1; }
+.vcard-meta { display: flex; align-items: center; gap: 10px; color: #dbe6fb; font-size: 14px; font-weight: 600; }
+.vcard-meta .vm-ic { width: 30px; height: 30px; flex: none; display: grid; place-items: center; border-radius: 9px; background: rgba(47,128,255,.14); border: 1px solid rgba(47,128,255,.24); }
+.vcard-meta .vm-ic svg { width: 17px; height: 17px; fill: none; stroke: var(--blue-400); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
 /* ==========================================================================
    REGIONS
@@ -329,7 +329,12 @@ p { margin: 0; }
 @media (max-width: 900px) {
   .nav-links, .hide-mobile { display: none; }
   .nav-toggle { display: flex; }
-  .rides { grid-template-columns: 1fr; max-width: 440px; margin-inline: auto; }
+  .vehicles { gap: 12px; }
+  .vcard-body { padding: 13px 13px 16px; }
+  .vcard-body h3 { font-size: 16px; }
+  .vcard-body p { font-size: 12.5px; }
+  .vcard-meta { font-size: 12.5px; gap: 8px; }
+  .vcard-meta .vm-ic { width: 26px; height: 26px; }
   .regions { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 620px) {
