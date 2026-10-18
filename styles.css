@@ -221,11 +221,13 @@ p { margin: 0; }
 /* ==========================================================================
    REGIONS
    ========================================================================== */
-.regions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.region { position: relative; display: block; border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line); background: var(--navy-800); aspect-ratio: 16 / 11; }
+.regions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.region { position: relative; display: block; border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line); background: var(--navy-800); aspect-ratio: 4 / 3; }
 .region img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
 .region:hover img { transform: scale(1.07); }
-.region-arrow { position: absolute; top: 14px; right: 14px; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.92); opacity: 0; transform: translateY(-4px); transition: opacity .25s ease, transform .25s ease; }
+.region-grad { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(4,13,32,0) 42%, rgba(4,13,32,.2) 64%, rgba(4,13,32,.82) 100%); pointer-events: none; }
+.region-name { position: absolute; left: 16px; bottom: 13px; z-index: 2; color: #fff; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -.01em; text-shadow: 0 2px 12px rgba(0,0,0,.55); }
+.region-arrow { position: absolute; top: 14px; right: 14px; z-index: 2; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.92); opacity: 0; transform: translateY(-4px); transition: opacity .25s ease, transform .25s ease; }
 .region-arrow svg { width: 18px; height: 18px; fill: none; stroke: var(--blue-700); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
 .region:hover .region-arrow { opacity: 1; transform: translateY(0); }
 .region-more { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; color: #cdddff; background: rgba(47,128,255,.06); border: 2px dashed rgba(47,128,255,.35); border-radius: var(--r-lg); padding: 20px; }
@@ -341,7 +343,8 @@ p { margin: 0; }
   .features { grid-template-columns: repeat(2, 1fr); gap: 28px 12px; }
   .steps { grid-template-columns: repeat(2, 1fr); gap: 32px 18px; }
   .steps-line { display: none; }
-  .regions { grid-template-columns: 1fr; }
+  .regions { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .region-name { font-size: 16px; left: 12px; bottom: 11px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-bottom { justify-content: center; text-align: center; }
