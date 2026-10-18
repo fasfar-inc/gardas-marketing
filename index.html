@@ -3,331 +3,317 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071b38">
-  <title>GARDAŞ - Kuzey Kıbrıs Ulaşım Uygulaması</title>
-  <meta name="description" content="GARDAŞ, Kuzey Kıbrıs için güvenli, hızlı ve yerel ulaşım deneyimi.">
+  <meta name="theme-color" content="#06162f">
+  <title>GARDAŞ — Kuzey Kıbrıs Ulaşım Uygulaması</title>
+  <meta name="description" content="GARDAŞ, Kuzey Kıbrıs için güvenli, hızlı ve yerel ulaşım deneyimi. Bir dokunuşla yolculuğunu başlat.">
   <link rel="icon" type="image/svg+xml" href="assets/gardas-logo-blue.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="site-shell">
-    <section class="hero-panel" id="home">
-      <header class="site-header" aria-label="GARDAŞ">
-        <a class="brand" href="#home" aria-label="GARDAŞ ana sayfa">
-          <img src="assets/gardas-logo-white.svg" alt="">
-          <span>GARDAŞ</span>
-        </a>
-        <nav class="main-nav" aria-label="Ana menü">
-          <a href="#home" data-i18n="nav.home">Ana Sayfa</a>
-          <a href="#about" data-i18n="nav.about">Hakkımızda</a>
-          <a href="#driver" data-i18n="nav.driver">Sürücü Ol</a>
-          <a href="#regions" data-i18n="nav.regions">Hizmet Bölgeleri</a>
-          <a href="#support" data-i18n="nav.support">Destek</a>
-        </nav>
+  <!-- ===== HEADER ===== -->
+  <header class="nav" id="home">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home" aria-label="GARDAŞ">
+        <img src="assets/gardas-logo-blue.svg" alt="">
+        <span>GARDAŞ</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Ana menü">
+        <a href="#about" data-i18n="nav.about">Hakkımızda</a>
+        <a href="#rides" data-i18n="nav.rides">Yolculuklar</a>
+        <a href="#regions" data-i18n="nav.regions">Hizmet Bölgeleri</a>
+        <a href="#driver" data-i18n="nav.driver">Sürücü Ol</a>
+        <a href="#support" data-i18n="nav.support">Destek</a>
+      </nav>
+
+      <div class="nav-right">
         <div class="lang-switch" aria-label="Dil seçimi">
           <button class="active" type="button" data-lang="tr">TR</button>
-          <span>|</span>
+          <span class="sep">|</span>
           <button type="button" data-lang="en">EN</button>
         </div>
-      </header>
+        <a class="btn primary btn-sm hide-mobile" href="https://app.gardasapp.com" data-app-link data-i18n="hero.open">GARDAŞ’ı Aç</a>
+        <button class="nav-toggle" type="button" aria-label="Menü" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" aria-label="Mobil menü">
+      <a href="#about" data-i18n="nav.about">Hakkımızda</a>
+      <a href="#rides" data-i18n="nav.rides">Yolculuklar</a>
+      <a href="#regions" data-i18n="nav.regions">Hizmet Bölgeleri</a>
+      <a href="#driver" data-i18n="nav.driver">Sürücü Ol</a>
+      <a href="#support" data-i18n="nav.support">Destek</a>
+      <a class="btn primary" href="https://app.gardasapp.com" data-app-link data-i18n="hero.open">GARDAŞ’ı Aç</a>
+    </nav>
+  </header>
 
-      <div class="hero-content">
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="wrap">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Kuzey Kıbrıs mobility</p>
-          <h1><span data-i18n="hero.title">Kuzey Kıbrıs,</span> <span class="hl-h" data-i18n="hero.title2">bir dokunuş uzağında.</span></h1>
-          <p class="lead" data-i18n="hero.subtitle">Güvenli, hızlı ve her zaman yanında.</p>
-          <p class="body-copy" data-i18n="hero.body">GARDAŞ ile istediğin yere kolayca ulaş. Yolculuğunu şimdi başlat.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="https://app.gardasapp.com" data-app-link data-i18n="hero.open">GARDAŞ’ı Aç</a>
-            <a class="btn ghost" href="https://app.gardasapp.com/driver" data-driver-link data-i18n="hero.driver">Sürücü Ol</a>
-          </div>
-          <div class="store-row" aria-label="Mobil uygulama mağazaları">
-            <button class="store-badge" type="button" aria-disabled="true">
-              <span class="store-icon apple-icon"></span>
-              <span><b>App Store</b><small data-i18n="soon">Yakında</small></span>
-            </button>
-            <button class="store-badge" type="button" aria-disabled="true">
-              <span class="store-icon play-icon"></span>
-              <span><b>Google Play</b><small data-i18n="soon">Yakında</small></span>
-            </button>
-          </div>
-        </div>
-
-        <div class="phone hero-phone" aria-label="GARDAŞ müşteri uygulaması">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="app-screen customer-screen">
-              <div class="phone-status"><span>9:41</span><span></span></div>
-              <div class="onboarding-top" role="region" aria-label="Get Started">
-                <button class="onboarding-back" type="button" aria-label="Back">
-                  <span aria-hidden="true">←</span>
-                </button>
-                <div class="onboarding-brand">
-                  <img src="assets/gardas-logo-blue.svg" alt="">
-                  <span>GARDAŞ</span>
-                </div>
-                <div class="onboarding-lang-switch" aria-label="Language selector">
-                  <button class="active" type="button" data-lang="tr">TR</button>
-                  <span>|</span>
-                  <button type="button" data-lang="en">EN</button>
-                </div>
-                <p class="onboarding-prompt" data-i18n="onboarding.prompt">How would you like to continue?</p>
-              </div>
-              <div class="search-pill" data-i18n="phone.where">Nereye gidiyorsun?</div>
-              <div class="mini-map">
-                <span class="route-line"></span>
-                <i class="pin p1"></i><i class="pin p2"></i><i class="pin p3"></i>
-              </div>
-              <div class="route-card">
-                <div><small data-i18n="phone.from">Alış noktası</small><b>Girne, Merkez</b></div>
-                <div><small data-i18n="phone.to">Varış</small><b>Lefkoşa, Dereboyu</b></div>
-              </div>
-              <div class="ride-stack">
-                <div><img src="assets/mockup-crop-ride.png" alt=""><span>GARDAŞ Ride</span><b>₺220</b></div>
-                <div><img src="assets/mockup-crop-xl.png" alt=""><span>GARDAŞ XL</span><b>₺350</b></div>
-                <div><img src="assets/mockup-crop-airport.png" alt=""><span>GARDAŞ Airport</span><b>₺450</b></div>
-              </div>
-              <button type="button" data-i18n="phone.button">Devam Et</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section why-section" id="about">
-      <div class="section-head">
-        <h2 data-i18n="why.title">Neden GARDAŞ?</h2>
-        <span></span>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <span class="icon-shield"></span>
-          <h3 data-i18n="why.verified.title">Doğrulanmış Sürücüler</h3>
-          <p data-i18n="why.verified.text">Tüm sürücülerimiz titizlikle denetlenir.</p>
-        </article>
-        <article class="feature-card">
-          <span class="icon-pin"></span>
-          <h3 data-i18n="why.local.title">Kuzey Kıbrıs’a Özel</h3>
-          <p data-i18n="why.local.text">Yerel bir ekip, yerel bir hizmet.</p>
-        </article>
-        <article class="feature-card">
-          <span class="icon-headset"></span>
-          <h3 data-i18n="why.support.title">7/24 Destek</h3>
-          <p data-i18n="why.support.text">Her zaman yanında canlı destek.</p>
-        </article>
-        <article class="feature-card">
-          <span class="icon-lock"></span>
-          <h3 data-i18n="why.safe.title">Güvenli Yolculuk</h3>
-          <p data-i18n="why.safe.text">Güvenliğin bizim için öncelik.</p>
-        </article>
-        <article class="feature-card">
-          <span class="icon-wallet"></span>
-          <h3 data-i18n="why.cash.title">Nakit Ödeme</h3>
-          <p data-i18n="why.cash.text">Nakit ödeme kolay ve hızlı.</p>
-        </article>
-        <article class="feature-card">
-          <span class="icon-card"></span>
-          <h3 data-i18n="why.card.title">Kart Ödeme Yakında</h3>
-          <p data-i18n="why.card.text">Yakında kartla ödeme seçeneği geliyor.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section process-section">
-      <div class="section-head">
-        <h2 data-i18n="process.title">Nasıl Çalışır?</h2>
-        <span></span>
-      </div>
-      <div class="steps">
-        <article>
-          <span class="step-icon icon-pin"></span>
-          <b>1</b>
-          <h3 data-i18n="process.one.title">Konumunu seç</h3>
-          <p data-i18n="process.one.text">Alış noktanı belirle.</p>
-        </article>
-        <article>
-          <span class="step-icon icon-route"></span>
-          <b>2</b>
-          <h3 data-i18n="process.two.title">Gideceğin yeri belirle</h3>
-          <p data-i18n="process.two.text">Nereye gideceğini seç.</p>
-        </article>
-        <article>
-          <span class="step-icon icon-car"></span>
-          <b>3</b>
-          <h3 data-i18n="process.three.title">Sürücünü takip et</h3>
-          <p data-i18n="process.three.text">Sürücünü haritada canlı takip et.</p>
-        </article>
-        <article>
-          <span class="step-icon icon-shield"></span>
-          <b>4</b>
-          <h3 data-i18n="process.four.title">Güvenle var</h3>
-          <p data-i18n="process.four.text">Hızlı, güvenli ve konforlu yolculuk.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section ride-section">
-      <div class="section-head">
-        <h2 data-i18n="rides.title">Yolculuk Seçenekleri</h2>
-        <span></span>
-      </div>
-      <div class="ride-grid">
-        <article class="ride-card">
-          <h3>GARDAŞ Ride</h3>
-          <img src="assets/ride-sedan-black.png" alt="GARDAŞ Ride">
-          <p data-i18n="rides.ride">Günlük ihtiyaçların için ekonomik ve konforlu ulaşım.</p>
-          <div><span data-i18n="rides.people14">1-4 Kişi</span><span data-i18n="rides.economic">Ekonomik</span></div>
-        </article>
-        <article class="ride-card">
-          <h3>GARDAŞ XL</h3>
-          <img src="assets/mockup-crop-xl.png" alt="GARDAŞ XL">
-          <p data-i18n="rides.xl">Daha geniş araçlarla gruplar ve fazla bagajlar için ideal.</p>
-          <div><span data-i18n="rides.people16">1-6 Kişi</span><span data-i18n="rides.comfort">Geniş & Rahat</span></div>
-        </article>
-        <article class="ride-card">
-          <h3>GARDAŞ Airport</h3>
-          <img src="assets/mockup-crop-airport.png" alt="GARDAŞ Airport">
-          <p data-i18n="rides.airport">Ercan Havalimanı ve otel transferlerinizi zamanında ve konforlu yapar.</p>
-          <div><span data-i18n="rides.people14">1-4 Kişi</span><span data-i18n="rides.flight">Uçuş Takibi</span></div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== TRUST STRIP ===== -->
-    <section class="trust-strip" aria-label="GARDAŞ güven">
-      <div class="trust-item"><span class="icon-shield"></span><div><b translate="no">2K+</b><small data-i18n="trust.drivers">Onaylı yerel sürücü</small></div></div>
-      <div class="trust-item"><span class="icon-headset"></span><div><b translate="no">7/24</b><small data-i18n="trust.support">Müşteri desteği</small></div></div>
-      <div class="trust-item"><span class="icon-pin"></span><div><b data-i18n="trust.livev">Canlı</b><small data-i18n="trust.track">Sürücü takibi</small></div></div>
-      <div class="trust-item"><span class="icon-wallet"></span><div><b data-i18n="trust.cashv">Nakit</b><small data-i18n="trust.pay">Ödeme</small></div></div>
-    </section>
-
-    <!-- ===== SERVICE AREAS ===== -->
-    <section class="section regions-section" id="regions">
-      <div class="section-head center">
-        <p class="eyebrow-dark" data-i18n="regions.eyebrow">HİZMET BÖLGELERİMİZ</p>
-        <h2 data-i18n="regions.title">Kuzey Kıbrıs’ın Her Yerindeyiz</h2>
-        <p class="section-sub" data-i18n="regions.sub">Güvenli, hızlı ve konforlu yolculuk deneyimi için hizmet verdiğimiz bölgeler.</p>
-      </div>
-      <div class="region-grid">
-        <a class="region-card" href="#regions">
-          <img src="assets/ref-region-girne.png" alt="Girne">
-          <span class="rc-grad"></span>
-          <span class="rc-body"><span class="rc-city">Girne</span><span class="rc-serving" data-i18n="regions.serving">7/24 Hizmetinizde</span></span>
-          <span class="rc-arrow" aria-hidden="true"></span>
-        </a>
-        <a class="region-card" href="#regions">
-          <img src="assets/ref-region-lefkosa.png" alt="Lefkoşa">
-          <span class="rc-grad"></span>
-          <span class="rc-body"><span class="rc-city">Lefkoşa</span><span class="rc-serving" data-i18n="regions.serving">7/24 Hizmetinizde</span></span>
-          <span class="rc-arrow" aria-hidden="true"></span>
-        </a>
-        <a class="region-card" href="#regions">
-          <img src="assets/ref-region-gazimagusa.png" alt="Gazimağusa">
-          <span class="rc-grad"></span>
-          <span class="rc-body"><span class="rc-city">Gazimağusa</span><span class="rc-serving" data-i18n="regions.serving">7/24 Hizmetinizde</span></span>
-          <span class="rc-arrow" aria-hidden="true"></span>
-        </a>
-        <a class="region-card" href="#regions">
-          <img src="assets/ref-region-iskele.png" alt="İskele">
-          <span class="rc-grad"></span>
-          <span class="rc-body"><span class="rc-city">İskele</span><span class="rc-serving" data-i18n="regions.serving">7/24 Hizmetinizde</span></span>
-          <span class="rc-arrow" aria-hidden="true"></span>
-        </a>
-        <a class="region-card" href="#regions">
-          <img src="assets/ref-region-ercan.png" alt="Ercan Havalimanı">
-          <span class="rc-grad"></span>
-          <span class="rc-body"><span class="rc-city">Ercan Havalimanı</span><span class="rc-serving" data-i18n="regions.serving">7/24 Hizmetinizde</span></span>
-          <span class="rc-arrow" aria-hidden="true"></span>
-        </a>
-      </div>
-      <div class="region-more"><span class="rm-pin" aria-hidden="true"></span><span data-i18n="regions.more">Yakında daha fazla bölgede!</span></div>
-    </section>
-
-    <!-- ===== DRIVER ===== -->
-    <section class="driver-banner" id="driver">
-      <div class="driver-copy">
-        <h2><span data-i18n="driver.title">Sürücü Ol,</span><br><span class="hl" data-i18n="driver.title2">Kazancını Artır!</span></h2>
-        <p class="driver-intro" data-i18n="driver.intro">Esnek çalışma saatleri, yüksek kazanç fırsatları ve güçlü destek ile kendi işinin sahibi ol.</p>
-        <ul class="driver-benefits">
-          <li data-i18n="driver.one">Daha fazla yolculuk isteği al</li>
-          <li data-i18n="driver.two">Çalışma saatlerini sen belirle</li>
-          <li data-i18n="driver.three">Yolculuklarını ve kazancını takip et</li>
-          <li data-i18n="driver.four">Güvenilir bir yerel network’e katıl</li>
-        </ul>
-        <div class="driver-actions">
-          <a class="btn primary" href="https://app.gardasapp.com/driver" data-driver-link>
-            <span data-i18n="driver.button">Sürücü Başvurusu</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12m-5-5 5 5-5 5"/></svg>
+        <p class="eyebrow" data-i18n="hero.eyebrow">KUZEY KIBRIS MOBILITY</p>
+        <h1>
+          <span data-i18n="hero.title">Kuzey Kıbrıs,</span>
+          <span class="grad" data-i18n="hero.title2">bir dokunuş uzağında.</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero.subtitle">Güvenli, hızlı ve her zaman yanınızda.</p>
+        <p class="hero-body" data-i18n="hero.body">GARDAŞ ile istediğin yere kolayca ulaş. Yolculuğunu şimdi başlat.</p>
+        <div class="hero-actions">
+          <a class="btn primary btn-lg" href="https://app.gardasapp.com" data-app-link>
+            <span data-i18n="hero.open">GARDAŞ’ı Aç</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-6-6 6 6-6 6"/></svg>
           </a>
-          <a class="driver-guide" href="https://app.gardasapp.com/driver" data-driver-link><span data-i18n="driver.guide">Sürücü Rehberini İncele</span> ›</a>
-        </div>
-        <div class="driver-stats">
-          <div class="driver-stat"><span class="icon-wallet"></span><b data-i18n="driver.stat1t">Yüksek Kazanç</b><small data-i18n="driver.stat1d">Daha fazla kazanma fırsatı</small></div>
-          <div class="driver-stat"><span class="icon-clock"></span><b data-i18n="driver.stat2t">Esnek Çalışma</b><small data-i18n="driver.stat2d">Kendi programını oluştur</small></div>
-          <div class="driver-stat"><span class="icon-headset"></span><b data-i18n="driver.stat3t">7/24 Destek</b><small data-i18n="driver.stat3d">Her zaman yanınızdayız</small></div>
-        </div>
-      </div>
-      <div class="driver-photo" aria-hidden="true">
-        <img src="assets/ref-driver-person.png" alt="">
-      </div>
-    </section>
-
-    <!-- ===== DOWNLOAD ===== -->
-    <section class="download-card" id="support">
-      <div class="download-copy">
-        <h2><span data-i18n="download.title">GARDAŞ’ı</span><br><span class="hl" data-i18n="download.title2">Yanında Götür!</span></h2>
-        <p data-i18n="download.text">Web uygulamamızı hemen kullan veya mobil uygulamalarımız çıktığında haberdar ol.</p>
-        <div class="qr-box">
-          <a class="qr" href="https://app.gardasapp.com" data-app-link aria-label="Web uygulamayı aç">
-            <img src="assets/qr-webapp.svg" alt="GARDAŞ web uygulama QR kodu">
+          <a class="btn outline btn-lg" href="https://app.gardasapp.com/driver" data-driver-link>
+            <span data-i18n="hero.driver">Sürücü Ol</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-6-6 6 6-6 6"/></svg>
           </a>
-          <div class="qr-copy">
-            <b data-i18n="download.web">Web Uygulamasını Aç</b>
-            <small data-i18n="download.webtext">Tarayıcında hemen kullan</small>
-            <a class="btn primary small" href="https://app.gardasapp.com" data-app-link>
-              <span data-i18n="download.button">Web Uygulamasına Git</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6m0-6-9 9M9 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>
-            </a>
-          </div>
         </div>
-        <div class="download-badges">
-          <button class="store-badge dark" type="button" aria-disabled="true">
-            <span class="store-icon apple-icon"></span>
+        </div>
+      </div>
+
+      <img class="hero-car-img" src="assets/hero-taxi.jpg" alt="GARDAŞ taksi — Kuzey Kıbrıs sahilinde" loading="eager">
+
+      <div class="wrap">
+        <div class="store-row" aria-label="Mobil uygulama mağazaları">
+          <button class="store-badge" type="button" aria-disabled="true">
+            <svg class="si" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.4 12.9c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .7 1.1 1.6 2.3 2.8 2.3 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.9-1.3 1.2-2.5 1.2-2.6-.1 0-2.4-.9-2.4-3.5zM14.2 6.3c.6-.8 1-1.8.9-2.9-.9 0-2 .6-2.6 1.3-.6.7-1.1 1.7-.9 2.7 1 .1 2-.5 2.6-1.1z"/></svg>
             <span><b>App Store</b><small data-i18n="soon">Yakında</small></span>
           </button>
-          <button class="store-badge dark" type="button" aria-disabled="true">
-            <span class="store-icon play-icon"></span>
+          <button class="store-badge" type="button" aria-disabled="true">
+            <svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3 13 11.7l-2.5 2.5L3.6 2.3z" fill="#34d399"/><path d="M3.6 2.3c-.3.2-.5.6-.5 1.1v17.2c0 .5.2.9.5 1.1l7-10.2-7-9.2z" fill="#38bdf8"/><path d="M3.6 21.7 10.5 14.2 13 16.7 5.5 21.1c-.8.5-1.5.5-1.9.6z" fill="#fbbf24"/><path d="M18.9 10.6 15.9 8.9 13 11.7l2.5 2.5 3.4-1.9c.9-.5.9-1.3 0-1.7z" fill="#ef4444"/></svg>
             <span><b>Google Play</b><small data-i18n="soon">Yakında</small></span>
           </button>
         </div>
       </div>
-      <div class="download-phone" aria-hidden="true">
-        <div class="phone app-phone">
-          <div class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="app-screen dl-screen">
-              <div class="phone-status"><span>9:41</span><span></span></div>
-              <p class="dl-greet" data-i18n="dl.greet">Merhaba 👋</p>
-              <p class="dl-q" data-i18n="dl.where">Nereye gidiyorsun?</p>
-              <div class="dl-search"><span class="dl-mag"></span><span data-i18n="dl.search">Nereye?</span></div>
-              <div class="dl-saved">
-                <div><span class="dl-ic home"></span><div><b data-i18n="dl.home">Ev</b><small data-i18n="dl.homeSub">Ev adresini ayarla</small></div></div>
-                <div><span class="dl-ic pin"></span><div><b>Ercan Havalimanı</b><small>Ercan, KKTC</small></div></div>
-                <div><span class="dl-ic pin"></span><div><b>Girne Limanı</b><small>Girne, KKTC</small></div></div>
-              </div>
-              <div class="dl-rides">
-                <div><img src="assets/mockup-crop-ride.png" alt=""><span>GARDAŞ Ride</span><b>₺120</b></div>
-                <div><img src="assets/mockup-crop-airport.png" alt=""><span>GARDAŞ Airport</span><b>₺230</b></div>
-              </div>
-              <button type="button" data-i18n="dl.call">GARDAŞ Çağır</button>
+    </section>
+
+    <!-- ===== WHY ===== -->
+    <section class="section why" id="about">
+      <div class="wrap">
+        <div class="head reveal">
+          <h2 data-i18n="why.title">Neden GARDAŞ?</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+        </div>
+        <div class="features">
+          <article class="feature reveal">
+            <span class="feature-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <h3 data-i18n="why.verified.title">Doğrulanmış Sürücüler</h3>
+            <p data-i18n="why.verified.text">Güvenli yolculuk</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <h3 data-i18n="why.local.title">Kuzey Kıbrıs’a Özel</h3>
+            <p data-i18n="why.local.text">Yerel bir çözüm</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <h3 data-i18n="why.support.title">7/24 Destek</h3>
+            <p data-i18n="why.support.text">Her zaman yanında</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+            <h3 data-i18n="why.fast.title">Hızlı ve Kolay</h3>
+            <p data-i18n="why.fast.text">Saniyeler içinde araç</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section how" id="how">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="kicker" data-i18n="process.kicker">ADIM ADIM</span>
+          <h2 data-i18n="process.title">Nasıl Çalışır?</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+        </div>
+        <div class="steps">
+          <span class="steps-line" aria-hidden="true"></span>
+          <article class="step reveal">
+            <span class="step-num">1</span>
+            <span class="step-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <h3 data-i18n="process.one.title">Konumunu seç</h3>
+            <p data-i18n="process.one.text">Alış noktanı belirle.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">2</span>
+            <span class="step-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19V7a2 2 0 012-2h4"/><path d="M18 5v12a2 2 0 01-2 2h-4"/><path d="M9 8l3-3-3-3"/><path d="M15 16l-3 3 3 3"/></svg></span>
+            <h3 data-i18n="process.two.title">Gideceğin yeri belirle</h3>
+            <p data-i18n="process.two.text">Nereye gideceğini seç.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">3</span>
+            <span class="step-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16l1.5-4.5A2 2 0 018.4 10h7.2a2 2 0 011.9 1.5L19 16"/><rect x="4" y="16" width="16" height="3" rx="1.2"/><circle cx="7.5" cy="19" r="1.3"/><circle cx="16.5" cy="19" r="1.3"/></svg></span>
+            <h3 data-i18n="process.three.title">Sürücünü takip et</h3>
+            <p data-i18n="process.three.text">Sürücünü haritada canlı takip et.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">4</span>
+            <span class="step-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <h3 data-i18n="process.four.title">Güvenle var</h3>
+            <p data-i18n="process.four.text">Hızlı, güvenli ve konforlu yolculuk.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RIDES ===== -->
+    <section class="section rides-sec" id="rides">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="kicker" data-i18n="rides.kicker">SENİN İÇİN</span>
+          <h2 data-i18n="rides.title">Yolculuk Seçenekleri</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+        </div>
+        <div class="rides">
+          <article class="ride reveal">
+            <div class="ride-media"><img src="assets/ride-sedan-black.png" alt="GARDAŞ Ride"></div>
+            <div class="ride-body">
+              <h3>GARDAŞ Ride</h3>
+              <p data-i18n="rides.ride">Günlük ihtiyaçların için ekonomik ve konforlu ulaşım.</p>
+              <div class="ride-tags"><span data-i18n="rides.people14">1-4 Kişi</span><span data-i18n="rides.economic">Ekonomik</span></div>
             </div>
+          </article>
+          <article class="ride featured reveal">
+            <span class="ride-flag" data-i18n="rides.popular">En Popüler</span>
+            <div class="ride-media"><img src="assets/mockup-sharp-xl.png" alt="GARDAŞ XL"></div>
+            <div class="ride-body">
+              <h3>GARDAŞ XL</h3>
+              <p data-i18n="rides.xl">Daha geniş araçlarla gruplar ve fazla bagajlar için ideal.</p>
+              <div class="ride-tags"><span data-i18n="rides.people16">1-6 Kişi</span><span data-i18n="rides.comfort">Geniş & Rahat</span></div>
+            </div>
+          </article>
+          <article class="ride reveal">
+            <div class="ride-media"><img src="assets/mockup-sharp-airport.png" alt="GARDAŞ Airport"></div>
+            <div class="ride-body">
+              <h3>GARDAŞ Airport</h3>
+              <p data-i18n="rides.airport">Ercan Havalimanı ve otel transferlerinizi zamanında ve konforlu yapar.</p>
+              <div class="ride-tags"><span data-i18n="rides.people14">1-4 Kişi</span><span data-i18n="rides.flight">Uçuş Takibi</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REGIONS ===== -->
+    <section class="section regions-sec" id="regions">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="kicker" data-i18n="regions.eyebrow">HİZMET BÖLGELERİMİZ</span>
+          <h2 data-i18n="regions.title">Kuzey Kıbrıs’ın Her Yerindeyiz</h2>
+          <span class="head-rule" aria-hidden="true"></span>
+        </div>
+        <div class="regions">
+          <a class="region reveal" href="https://app.gardasapp.com" data-app-link>
+            <img src="assets/mockup-sharp-region-girne.png" alt="Girne">
+            <span class="region-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-5 5 5-5 5"/></svg></span>
+          </a>
+          <a class="region reveal" href="https://app.gardasapp.com" data-app-link>
+            <img src="assets/mockup-sharp-region-lefkosa.png" alt="Lefkoşa">
+            <span class="region-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-5 5 5-5 5"/></svg></span>
+          </a>
+          <a class="region reveal" href="https://app.gardasapp.com" data-app-link>
+            <img src="assets/mockup-sharp-region-gazimagusa.png" alt="Gazimağusa">
+            <span class="region-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-5 5 5-5 5"/></svg></span>
+          </a>
+          <a class="region reveal" href="https://app.gardasapp.com" data-app-link>
+            <img src="assets/mockup-sharp-region-iskele.png" alt="İskele">
+            <span class="region-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-5 5 5-5 5"/></svg></span>
+          </a>
+          <a class="region reveal" href="https://app.gardasapp.com" data-app-link>
+            <img src="assets/mockup-sharp-region-ercan.png" alt="Ercan Havalimanı">
+            <span class="region-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h12m-5-5 5 5-5 5"/></svg></span>
+          </a>
+          <div class="region region-more reveal">
+            <span class="rm-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <b data-i18n="regions.more">Yakında daha fazla bölgede!</b>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
+    <!-- ===== DRIVER ===== -->
+    <section class="section driver" id="driver">
+      <div class="wrap driver-grid">
+        <div class="driver-copy reveal">
+          <span class="kicker" data-i18n="driver.kicker">SÜRÜCÜ OL</span>
+          <h2><span data-i18n="driver.title">Sürücü Ol,</span> <span class="grad" data-i18n="driver.title2">Kazancını Artır!</span></h2>
+          <p class="hero-sub" data-i18n="driver.intro">Esnek çalışma saatleri, yüksek kazanç fırsatları ve güçlü destek ile kendi işinin sahibi ol.</p>
+          <ul class="driver-benefits">
+            <li data-i18n="driver.one">Daha fazla yolculuk isteği al</li>
+            <li data-i18n="driver.two">Çalışma saatlerini sen belirle</li>
+            <li data-i18n="driver.three">Yolculuklarını ve kazancını takip et</li>
+            <li data-i18n="driver.four">Güvenilir bir yerel network’e katıl</li>
+          </ul>
+          <div class="driver-actions">
+            <a class="btn primary btn-lg" href="https://app.gardasapp.com/driver" data-driver-link>
+              <span data-i18n="driver.button">Sürücü Başvurusu</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-6-6 6 6-6 6"/></svg>
+            </a>
+            <a class="driver-guide" href="https://app.gardasapp.com/driver" data-driver-link><span data-i18n="driver.guide">Sürücü Rehberini İncele</span> ›</a>
+          </div>
+          <div class="driver-stats">
+            <div><b data-i18n="driver.stat1t">Yüksek Kazanç</b><small data-i18n="driver.stat1d">Daha fazla kazanma fırsatı</small></div>
+            <div><b data-i18n="driver.stat2t">Esnek Çalışma</b><small data-i18n="driver.stat2d">Kendi programını oluştur</small></div>
+            <div><b data-i18n="driver.stat3t">7/24 Destek</b><small data-i18n="driver.stat3d">Her zaman yanınızdayız</small></div>
+          </div>
+        </div>
+        <div class="driver-photo reveal">
+          <img src="assets/ref-driver-person.png" alt="">
+          <div class="driver-badge">
+            <span class="db-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M5 9l7-7 7 7"/></svg></span>
+            <div><b data-i18n="driver.badge.t">Haftalık ödeme</b><small data-i18n="driver.badge.d">Kazancın hızlıca hesabında</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DOWNLOAD ===== -->
+    <section class="section download-sec" id="support">
+      <div class="wrap">
+        <div class="download reveal">
+          <div class="download-copy">
+            <span class="kicker" data-i18n="download.kicker">HER ZAMAN YANINDA</span>
+            <h2><span data-i18n="download.title">GARDAŞ’ı</span> <span class="grad" data-i18n="download.title2">Yanında Götür!</span></h2>
+            <p data-i18n="download.text">Web uygulamamızı hemen kullan veya mobil uygulamalarımız çıktığında haberdar ol.</p>
+            <div class="qr-box">
+              <a class="qr" href="https://app.gardasapp.com" data-app-link aria-label="Web uygulamayı aç">
+                <img src="assets/qr-webapp.svg" alt="GARDAŞ web uygulama QR kodu">
+              </a>
+              <div class="qr-copy">
+                <b data-i18n="download.web">Web Uygulamasını Aç</b>
+                <small data-i18n="download.webtext">Tarayıcında hemen kullan</small>
+                <a class="btn primary" href="https://app.gardasapp.com" data-app-link>
+                  <span data-i18n="download.button">Web Uygulamasına Git</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6m0-6-9 9M9 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="store-row">
+              <button class="store-badge" type="button" aria-disabled="true">
+                <svg class="si" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.4 12.9c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .7 1.1 1.6 2.3 2.8 2.3 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.9-1.3 1.2-2.5 1.2-2.6-.1 0-2.4-.9-2.4-3.5zM14.2 6.3c.6-.8 1-1.8.9-2.9-.9 0-2 .6-2.6 1.3-.6.7-1.1 1.7-.9 2.7 1 .1 2-.5 2.6-1.1z"/></svg>
+                <span><b>App Store</b><small data-i18n="soon">Yakında</small></span>
+              </button>
+              <button class="store-badge" type="button" aria-disabled="true">
+                <svg class="si" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3 13 11.7l-2.5 2.5L3.6 2.3z" fill="#34d399"/><path d="M3.6 2.3c-.3.2-.5.6-.5 1.1v17.2c0 .5.2.9.5 1.1l7-10.2-7-9.2z" fill="#38bdf8"/><path d="M3.6 21.7 10.5 14.2 13 16.7 5.5 21.1c-.8.5-1.5.5-1.9.6z" fill="#fbbf24"/><path d="M18.9 10.6 15.9 8.9 13 11.7l2.5 2.5 3.4-1.9c.9-.5.9-1.3 0-1.7z" fill="#ef4444"/></svg>
+                <span><b>Google Play</b><small data-i18n="soon">Yakında</small></span>
+              </button>
+            </div>
+          </div>
+          <div class="download-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
       <div class="footer-brand">
         <a class="brand" href="#home">
           <img src="assets/gardas-logo-white.svg" alt="">
@@ -335,10 +321,10 @@
         </a>
         <p data-i18n="footer.tag">Kuzey Kıbrıs’ın yerel ulaşım platformu. Güvenli, hızlı ve her zaman yanında.</p>
         <div class="socials">
-          <a href="https://instagram.com/gardas.app" aria-label="Instagram" class="soc-ig"></a>
-          <a href="https://facebook.com/gardasapp" aria-label="Facebook" class="soc-fb"></a>
-          <a href="https://x.com/gardasapp" aria-label="X" class="soc-x"></a>
-          <a href="https://linkedin.com/company/gardas" aria-label="LinkedIn" class="soc-in"></a>
+          <a href="https://instagram.com/gardas.app" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://facebook.com/gardasapp" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h2V5h-2c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2l1-3h-3V8.5c0-.3.2-.5.5-.5H14z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://x.com/gardasapp" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20" /></svg></a>
+          <a href="https://linkedin.com/company/gardas" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10v6M8 7.5v.01M12 16v-3.5a1.5 1.5 0 013 0V16" /></svg></a>
         </div>
       </div>
       <nav class="footer-col">
@@ -360,17 +346,17 @@
         <a href="#support" data-i18n="footer.privacy">Gizlilik Politikası</a>
         <a href="#support" data-i18n="footer.terms">Kullanım Koşulları</a>
       </nav>
-      <div class="footer-bottom">
-        <small data-i18n="footer.copy">© 2026 GARDAŞ. Tüm hakları saklıdır.</small>
-        <div class="lang-switch footer-lang" aria-label="Dil seçimi">
-          <button class="active" type="button" data-lang="tr">TR</button>
-          <span>|</span>
-          <button type="button" data-lang="en">EN</button>
-        </div>
-        <span class="footer-credit">Designed &amp; Built by <strong>FASFAR</strong></span>
+    </div>
+    <div class="wrap footer-bottom">
+      <small data-i18n="footer.copy">© 2026 GARDAŞ. Tüm hakları saklıdır.</small>
+      <div class="lang-switch footer-lang" aria-label="Dil seçimi">
+        <button class="active" type="button" data-lang="tr">TR</button>
+        <span class="sep">|</span>
+        <button type="button" data-lang="en">EN</button>
       </div>
-    </footer>
-  </main>
+      <span class="footer-credit">Designed &amp; Built by <strong>FASFAR</strong></span>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
